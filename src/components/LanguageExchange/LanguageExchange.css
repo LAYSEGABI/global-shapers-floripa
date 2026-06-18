@@ -1,0 +1,121 @@
+/* A section externa apenas usa o padding do seu global.css (ou você pode adicionar margens se precisar de mais espaço) */
+
+.le-banner {
+  width: 100%;
+  min-height: 495px; /* Altura exata do Figma */
+  
+  /* Usando a variável global de borda arredondada ou chumbando os 30px do Figma */
+  border-radius: var(--radius-lg, 30px); 
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Flexbox para centralizar o conteúdo dentro do banner */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Padding interno para o texto não encostar nas bordas no celular */
+  padding: 60px 20px; 
+}
+
+.le-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px; /* Mantém o texto quebrado bonitinho em poucas linhas */
+}
+
+/* --- TEXTOS --- */
+.le-title {
+  font-weight: 700;
+  font-size: 2rem; /* 32px */
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.le-description {
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+  color: #FFFFFF;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* --- BOTÃO --- */
+.le-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  
+  background: #FFFFFF;
+  color: var(--primary); /* Azul GS global */
+  
+  border-radius: 10px;
+  padding: 10px 28px;
+  
+  font-weight: 700;
+  font-size: 1rem; /* 16px */
+  
+  transition: var(--transition);
+  margin-bottom: 45px;
+}
+
+.le-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- BANDEIRAS --- */
+.le-flags-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0; 
+  transition: transform 0.3s ease;
+}
+
+.flag-icon + .flag-icon {
+  margin-left: -24px; 
+}
+
+.flag-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  z-index: 10;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  .le-banner {
+    min-height: auto;
+    padding: 50px 20px;
+    border-radius: var(--radius-md, 20px); /* Borda um pouco menor em telas pequenas */
+  }
+  
+  .le-title {
+    font-size: 1.75rem;
+  }
+  
+  .le-description {
+    font-size: 0.9rem;
+  }
+
+  .flag-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .flag-icon + .flag-icon {
+    margin-left: -18px; 
+  }
+}

@@ -1,0 +1,189 @@
+.support-section .title-wrapper {
+  margin-bottom: 50px;
+}
+
+/* Garante que os dois cards tenham a mesma altura */
+.support-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Borda bem suave */
+}
+
+/* --- CARD BRESHAPERS --- */
+.breshapers-img-wrapper {
+  width: 100%;
+  height: 220px;
+  background: var(--primary); /* Fundo caso a imagem demore a carregar */
+}
+
+.breshapers-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.support-card-content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.support-card-content h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+}
+
+.support-card-content p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.support-action {
+  margin-top: auto; /* Empurra o botão para o final do card */
+  padding-top: 24px;
+}
+
+.breshapers-btn {
+  width: 100%;
+  border: 2px solid var(--primary);
+  gap: 8px;
+}
+
+.breshapers-btn:hover {
+  background: var(--primary);
+  color: #FFFFFF;
+}
+
+/* --- CARD PIX --- */
+.pix-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(43, 80, 165, 0.03) 100%);
+}
+
+.pix-subtitle {
+  display: block;
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
+
+.qr-code-wrapper {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 30px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--primary);
+}
+
+.qr-code-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.copy-btn {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.copy-btn.copied {
+  background: #10B981; /* Verde de sucesso */
+  color: white;
+}
+
+.pix-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0;
+  color: var(--text-light);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.pix-divider::before,
+.pix-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pix-divider::before { margin-right: 15px; }
+.pix-divider::after { margin-left: 15px; }
+
+/* Tabela de Detalhes do Pix */
+.pix-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pix-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.85rem;
+}
+
+.pix-label {
+  font-weight: 700;
+  color: var(--primary-dark);
+  min-width: 70px;
+}
+
+.pix-value {
+  color: var(--text-light);
+  text-align: right;
+  word-break: break-word;
+}
+
+.pix-value.highlight {
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s;
+}
+
+.pix-value.highlight:hover {
+  opacity: 0.7;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 1024px) {
+  .support-card-content {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pix-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .pix-value {
+    text-align: left;
+  }
+}

@@ -1,0 +1,50 @@
+.photo-marquee {
+  width: 100%;
+  overflow: hidden;
+
+  background: linear-gradient(
+    180deg,
+    rgba(43, 80, 165, 0.45),
+    rgba(43, 80, 165, 0.041)
+  );
+
+  padding: 16px 0;
+}
+
+.photo-track {
+  display: flex;
+  gap: 14px;
+
+  width: max-content;
+
+  animation: marquee 35s linear infinite;
+}
+
+.photo-item {
+  flex-shrink: 0;
+}
+
+.photo-item img {
+  width: 275px;
+  height: 153px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.photo-marquee:hover .photo-track {
+  animation-play-state: paused;
+}

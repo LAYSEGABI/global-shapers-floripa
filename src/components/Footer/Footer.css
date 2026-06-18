@@ -1,0 +1,152 @@
+.footer {
+  /* Usando a sua variável global de cor escura (Azul Marinho) */
+  background-color: var(--primary-dark);
+  color: #FFFFFF;
+  margin-top: 100px; /* Dá espaço para a logo vazar para fora sem sobrepor a seção anterior */
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0 40px 0;
+}
+
+/* --- GRUPOS DE NAVEGAÇÃO --- */
+.footer-nav-group {
+  display: flex;
+  gap: 80px; /* Espaço entre as duas colunas de links */
+  margin-top: 60px; /* Alinha o texto mais para baixo em relação à logo central */
+}
+
+.footer-col h4 {
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-col a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-col a:hover {
+  color: #FFFFFF;
+  padding-left: 4px; /* Efeito suave movendo o link pro lado */
+}
+
+/* --- ÁREA CENTRAL (LOGO E SOCIAIS) --- */
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px; 
+}
+
+/* A mágica da logo vazando para cima */
+.footer-logo-wrapper {
+  width: 200px;
+  height: 160px;
+  margin-top: -60px; /* Puxa a logo para fora do fundo azul */
+  margin-bottom: 24px;
+  
+  /* Se a sua logo svg já for circular com fundo branco, isso cria o efeito. 
+     Se ela for vazada, você pode precisar de background: var(--primary-dark) aqui */
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-center h2 {
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-socials a img {
+  width: 32px;
+  height: 32px;
+  transition: var(--transition);
+  filter: brightness(0.9); /* Opcional: deixa a imagem levemente opaca */
+}
+
+.footer-socials a:hover img {
+  transform: translateY(-4px); /* Pulinho no hover */
+  filter: brightness(1); /* Fica com brilho total no hover */
+}
+
+/* --- COPYRIGHT BAR --- */
+.footer-bottom {
+  text-align: center;
+  padding: 24px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória sutil */
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .footer-center {
+    order: -1; /* Joga a logo e redes sociais lá pro topo no celular */
+  }
+
+  .footer-nav-group {
+    width: 100%;
+    margin-top: 0;
+    justify-content: space-around; /* Espalha as colunas igualmente */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-nav-group {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer-col a:hover {
+    padding-left: 0; /* Remove movimento lateral no mobile */
+  }
+  
+  .footer-logo-wrapper {
+    width: 140px;
+    height: 140px;
+    margin-top: -70px;
+  }
+}

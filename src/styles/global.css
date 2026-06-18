@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px; 
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+.container {
+  width: min(1480px, calc(100% - 48px));
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 6px 20px;
+
+  border: 2px solid var(--primary);
+
+  border-radius: 999px;
+
+  margin-bottom: 32px;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.section-title svg {
+  flex-shrink: 0;
+}
+
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 32px;
+
+  background: var(--primary);
+  color: white;
+
+  border-radius: 12px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 32px;
+
+  background: white;
+  color: var(--primary);
+
+  border-radius: 12px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.card {
+  background: white;
+  border-radius: 30px;
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.04),
+    0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-radius: 30px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 80px 0;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  section {
+    padding: 64px 0;
+  }
+}

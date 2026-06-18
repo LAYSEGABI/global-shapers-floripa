@@ -1,0 +1,144 @@
+/* --- CONFIGURAÇÃO DE CORES DOS CARDS (Extraídas do Figma) --- */
+.card-ecotrilhas {
+  --theme-color: #6F9E2C;
+  --theme-bg: rgba(160, 178, 133, 0.04);
+  --tab-bg: rgba(65, 103, 13, 0.7); /* Opacidade ajustada para leitura */
+}
+
+.card-foco {
+  --theme-color: #FFAA2A;
+  --theme-bg: rgba(255, 170, 42, 0.04);
+  --tab-bg: rgba(211, 132, 12, 0.78);
+}
+
+.card-shaper {
+  --theme-color: #9246E4;
+  --theme-bg: rgba(186, 138, 238, 0.09);
+  --tab-bg: rgba(146, 70, 228, 0.63);
+}
+
+/* --- ESTRUTURA DOS CARDS --- */
+.projects-section .section-title {
+  margin-bottom: 60px;
+}
+
+.projects-grid {
+  margin-bottom: 60px;
+}
+
+.project-card {
+  /* Usa as variáveis definidas nas classes acima */
+  background: var(--theme-bg);
+  border: 1px solid var(--theme-color);
+  border-radius: var(--radius-lg); /* 30px do seu global */
+  
+  padding: 15px 15px 30px 15px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Envolve a foto, a tab e a logo para posicionamento */
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px; /* Espaço para a logo que fica "vazando" para baixo */
+}
+
+/* Aba com o título do projeto */
+.project-tab {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  
+  background: var(--tab-bg);
+  border: 1px solid var(--theme-color);
+  border-radius: 10px 10px 0px 0px;
+  
+  padding: 6px 30px;
+  
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+/* Imagem de capa do projeto */
+.project-cover {
+  width: 100%;
+  height: 215px; /* Altura do Figma */
+  object-fit: cover;
+  
+  border-radius: 20px;
+  border-bottom: 6px solid var(--theme-color);
+  
+  /* Sombra leve na imagem que o Figma pediu em alguns cards */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+}
+
+/* Caixinha branca da Logo */
+.project-logo {
+  position: absolute;
+  bottom: -30px; /* Faz a logo ficar metade dentro e metade fora da foto */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  
+  width: 123px;
+  height: 67px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.20);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.project-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Descrição do Projeto */
+.project-desc {
+  font-size: 0.875rem; /* 14px no Figma */
+  text-align: center;
+  flex-grow: 1; /* Faz o texto preencher o espaço e empurrar o link para baixo */
+  margin-bottom: 24px;
+  padding: 0 10px;
+}
+
+/* Área do Link "Saiba Mais" */
+.project-link-wrapper {
+  width: 100%;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary-dark);
+  text-decoration: underline;
+  transition: var(--transition);
+}
+
+.project-link:hover {
+  color: var(--primary);
+  gap: 8px; /* Anima a setinha indo um pouco para o lado no hover */
+}
+
+.projects-footer {
+  margin-top: 20px;
+}

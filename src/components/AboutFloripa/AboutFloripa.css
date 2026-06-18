@@ -1,0 +1,122 @@
+.about-floripa-top {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1.2fr .8fr;
+
+  gap: 50px;
+
+  margin-bottom: 40px;
+}
+
+.about-floripa-text p {
+  margin-bottom: 18px;
+}
+
+.legacy-card {
+  padding: 20px;
+
+  border: 1px solid var(--primary);
+
+  border-radius: 30px;
+  max-height: 250px;
+  background: linear-gradient(120deg,
+      rgba(43, 80, 165, .12),
+      rgba(43, 80, 165, .03));
+}
+
+
+.legacy-card p {
+  margin-bottom: 18px;
+}
+
+.legacy-card span {
+  display: block;
+  color: var(--primary);
+  font-style: italic;
+}
+
+.legacy-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.about-floripa-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  margin-top: 70px;
+
+  align-items: center;
+}
+
+.focus-text p {
+  margin-bottom: 20px;
+}
+
+.focus-image {
+  position: relative;
+}
+
+.focus-image img {
+  width: 100%;
+  height: 320px;
+
+  object-fit: cover;
+
+  border-radius: 30px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+}
+
+.focus-badge {
+  position: absolute;
+
+  left: 50%;
+  bottom: 18px;
+
+  transform: translateX(-50%);
+
+  padding: 8px 22px;
+
+  color: white;
+
+  background: rgba(37, 32, 32, 0.527);
+
+  backdrop-filter: blur(8px);
+
+  border-radius: 999px;
+}
+
+@media (max-width: 1024px) {
+
+  .about-floripa-top,
+  .about-floripa-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-image img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about-floripa {
+    padding: 70px 0;
+  }
+
+  .focus-image img {
+    height: 280px;
+  }
+
+  .focus-badge {
+    font-size: .85rem;
+    width: calc(100% - 32px);
+
+    text-align: center;
+  }
+}
