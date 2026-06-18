@@ -1,7 +1,7 @@
 import "./LanguageExchange.css";
 import { MousePointerClick } from "lucide-react";
 
-import BackBanner from "../../assets/Images/back-LE.jpg";
+import BackBanner from "../../assets/Images/Back-LE.jpg";
 
 import UsaFlag from "../../assets/Flags/estados-unidos.jpg";
 import ChinaFlag from "../../assets/Flags/china.jpg";

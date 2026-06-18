@@ -1,6 +1,6 @@
 import "./AboutGlobal.css";
 import Counter from "../shared/Counter";
-import GSSummit2022 from "../../assets/images/GS-Annual-Summit-2022.png";
+import GSSummit2022 from "../../assets/Images/GS-Annual-Summit-2022.png";
 import { Globe } from "lucide-react";
 
 function AboutGlobal() {
