@@ -1,7 +1,7 @@
 import "./PhotoMarquee.css";
 
 function PhotoMarquee({ images }) {
-  const duplicated = [...images, ...images];
+  const duplicated = [...images, ...images, ...images]; 
 
   return (
     <div className="photo-marquee">

@@ -1,17 +1,9 @@
 import "./Hero.css";
-import { Globe2 } from "lucide-react";
-import BrasilFlag from "../../assets/Flags/bandeira-do-brasil.jpg";
-import ChinaFlag from "../../assets/Flags/china.jpg";
-import EUAFlag from "../../assets/Flags/estados-unidos.jpg";
-//import FrancaFlag from "../../assets/Flags/franca.jpg";
-import CoreiaDoSul from "../../assets/Flags/coreia-do-sul.png";
-//import AfricadoSulFlag from "../../assets/Flags/africa-do-sul.jpg";
-import Alemanha from "../../assets/Flags/alemanha.png";
-import ReinoUnido from "../../assets/Flags/reino-unido.png";
+import { Globe2, MousePointerClick } from "lucide-react";
+import InstagramIcon from "../../assets/Logos/instagram.png";
 
-
-
-import InstagramIcon from "../../assets/Logos/instagram.png"
+// Importe a sua imagem vazada aqui
+import ShapeLE from "../../assets/Images/shape-le.png"; 
 
 function Hero() {
   return (
@@ -44,33 +36,29 @@ function Hero() {
               </a>
             </div>
 
-            <div className="language-card">
+            {/* Apenas o Aviso Language Exchange foi alterado aqui */}
+            <div className="hero-le-cutout">
+              <img src={ShapeLE} alt="Fundo Language Exchange" className="le-shape-bg" />
+              
+              <div className="le-overlay-content">
+                <div className="le-header">
+                  <Globe2 size={20} />
+                  <h3>Language Exchange</h3>
+                </div>
 
+                <p>
+                  Aprendizado de idiomas para a comunidade Global Shapers.
+                </p>
 
-              <div className="language-header">
-                 <Globe2 size={26}/>
-                <h3>Language Exchange</h3>
-              </div>
-
-              <p>
-                Plataforma de aprendizado de idiomas para a comunidade Global
-                Shapers.
-              </p>
-
-              <div className="language-footer">
-                <a href="#" className="language-btn">
-                  Conheça agora
-                </a>
-                <div className="language-flags">
-                  <img src={BrasilFlag} alt="Bandeira do Brasil" />
-                  <img src={EUAFlag} alt="Bandeira dos EUA" />
-                  <img src={ChinaFlag} alt="Bandeira da China" />
-                  <img src={CoreiaDoSul} alt="Bandeira da Coreia do Sul" />
-                  <img src={Alemanha} alt="Bandeira da Alemanha" />
-                  <img src={ReinoUnido} alt="Bandeira do Reino Unido" />
+                <div className="le-action-group">
+                  <a href="#" className="le-action-btn">
+                    Conheça agora <MousePointerClick size={14} />
+                  </a>
                 </div>
               </div>
             </div>
+            {/* Fim do Aviso Language Exchange */}
+
           </div>
 
           <a
