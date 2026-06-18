@@ -1,6 +1,4 @@
-.events-section .title-wrapper {
-  margin-bottom: 50px;
-}
+
 
 .events-list {
   display: flex;
@@ -21,10 +19,10 @@
 
 /* Área de Texto */
 .event-content {
-  padding: 35px 40px;
+  padding: 40px ;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+justify-content: center;
 }
 
 .event-content h3 {

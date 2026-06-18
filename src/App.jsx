@@ -22,8 +22,8 @@ function App() {
       <Projects />
       <LanguageExchange />
       <Events />
-      <Support />
       <JoinUs />
+      <Support />
       {/* <Partners /> */}
       <Footer />
     </>

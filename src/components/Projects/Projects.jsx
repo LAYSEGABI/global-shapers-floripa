@@ -33,7 +33,7 @@ const projectsList = [
     id: "shaper",
     title: "Shaper Lab",
     themeClass: "card-shaper",
-    description: "O ShaperLab é uma iniciativa voltada ao desenvolvimento contínuo de seus membros, promovendo experiências de aprendizagem alinhadas às competências mais relevantes para o futuro do trabalho e para a geração de impacto social. Inspirado nas competências destacadas pelo Future of Jobs Report do Fórum Econômico Mundial.",
+    description: "O ShaperLab é uma iniciativa voltada ao desenvolvimento contínuo de seus membros, promovendo experiências de aprendizagem alinhadas às competências mais relevantes para o futuro do trabalho e para a geração de impacto social.",
     coverImg: ShaperCover,
     logoImg: ShaperLogo,
     link: "/projetos",

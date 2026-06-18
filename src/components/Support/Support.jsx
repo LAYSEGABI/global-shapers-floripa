@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Support.css";
 import { HeartHandshake, Copy, Check, ExternalLink } from "lucide-react";
+import confetti from "canvas-confetti";
 
 // Importe as imagens reais da sua pasta
 import BreshapersImg from "../../assets/Images/banner-breshapers.png";
@@ -12,10 +13,21 @@ export default function Support() {
   // Coloque aqui a chave Pix aleatória real
   const pixKey = "123e4567-e89b-12d3-a456-426614174000"; 
 
-  const handleCopyPix = () => {
+ const handleCopyPix = () => {
+    // 1. Copia o texto
     navigator.clipboard.writeText(pixKey);
+    
+    // 2. Muda o estado do botão
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Volta ao normal após 2 segundos
+    setTimeout(() => setCopied(false), 2000);
+
+    // 3. Dispara os confetes! 🎉
+    confetti({
+      particleCount: 100, // Quantidade de confetes
+      spread: 70,         // O quão espalhado eles vão sair
+      origin: { y: 0.6 }, // Faz sair um pouquinho abaixo do meio da tela
+      colors: ['#2B50A5', '#10B981', '#FFFFFF'] // Cores personalizadas (Azul GS, Verde e Branco)
+    });
   };
 
   return (
@@ -29,7 +41,7 @@ export default function Support() {
           </div>
         </div>
 
-        <div className="grid-2 support-grid">
+        <div className="support-grid">
           
           {/* CARD 1: BRESHAPERS */}
           <div className="card support-card">
@@ -47,8 +59,7 @@ export default function Support() {
               </p>
               <p>
                 Além de arrecadar fundos, o Breshapers promove o consumo consciente e a economia circular, 
-                incentivando a reutilização de peças e fortalecendo uma rede de pessoas comprometidas com a 
-                geração de impacto positivo nas comunidades.
+                incentivando a reutilização de peças e gerando impacto positivo nas comunidades.
               </p>
               
               <div className="support-action">

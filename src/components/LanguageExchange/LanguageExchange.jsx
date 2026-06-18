@@ -8,6 +8,9 @@ import ChinaFlag from "../../assets/Flags/china.jpg";
 import FranceFlag from "../../assets/Flags/franca.jpg";
 import SouthAfricaFlag from "../../assets/Flags/africa-do-sul.jpg";
 import BrazilFlag from "../../assets/Flags/bandeira-do-brasil.jpg";
+import CoreiaDoSul from "../../assets/Flags/coreia-do-sul.png";
+import Alemanha from "../../assets/Flags/alemanha.png";
+import ReinoUnido from "../../assets/Flags/reino-unido.png";
 
 export default function LanguageExchange() {
   return (
@@ -43,6 +46,9 @@ export default function LanguageExchange() {
               <img src={FranceFlag} alt="Bandeira da França" className="flag-icon" />
               <img src={SouthAfricaFlag} alt="Bandeira da África do Sul" className="flag-icon" />
               <img src={BrazilFlag} alt="Bandeira do Brasil" className="flag-icon" />
+              <img src={CoreiaDoSul} alt="Bandeira da Coreia do Sul" className="flag-icon" />
+              <img src={Alemanha} alt="Bandeira da Alemanha" className="flag-icon" />
+              <img src={ReinoUnido} alt="Bandeira do Reino Unido" className="flag-icon" />
             </div>
 
           </div>

@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import "./Community.css";
 import { UsersRound } from "lucide-react";
 import { curators } from "../../data/curators";
@@ -5,22 +6,45 @@ import { members } from "../../data/members";
 import Linkedin from "../../assets/Logos/linkedin.png";
 
 export default function Community() {
+  // Variáveis para controlar o arraste do mouse
+  const sliderRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  // Funções que calculam o movimento do mouse
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - sliderRef.current.offsetLeft);
+    setScrollLeft(sliderRef.current.scrollLeft);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - sliderRef.current.offsetLeft;
+    const walk = (x - startX) * 1;
+    sliderRef.current.scrollLeft = scrollLeft - walk;
+  };
+
   return (
     <section className="community" id="community">
-      {/* A tag section já pega o padding automático do global.css */}
-      
-      {/* O container e text-center vêm do global.css */}
       <div className="container text-center">
         
-        {/* Usamos a classe section-title global que você já criou */}
         <div className="section-title">
           <UsersRound size={24} />
           <span>Nossa Comunidade</span>
         </div>
 
-        <h3 className="community-subtitle">
-          Curadoria 26/27
-        </h3>
+        <h3 className="community-subtitle">Curadoria 26/27</h3>
 
         <div className="curators-grid">
           {curators.map((person) => (
@@ -42,14 +66,20 @@ export default function Community() {
           ))}
         </div>
 
-        <h3 className="community-subtitle">
-          Membros
-        </h3>
+        <h3 className="community-subtitle">Membros</h3>
 
-        <div className="members-slider">
+        {/* Adicionamos a referência e os eventos de mouse aqui */}
+        <div 
+          className="members-slider"
+          ref={sliderRef}
+          onMouseDown={handleMouseDown}
+          onMouseLeave={handleMouseLeave}
+          onMouseUp={handleMouseUp}
+          onMouseMove={handleMouseMove}
+        >
           <div className="members-track">
-            {/* Duplicando o array para o loop infinito funcionar perfeitamente */}
-            {[...members, ...members].map((member, index) => (
+            {/* Agora usamos apenas o array normal de membros */}
+            {members.map((member, index) => (
               <div className="person-card member-card" key={`${member.name}-${index}`}>
                 <div className="avatar-wrapper">
                   <img src={member.image} alt={`Foto de ${member.name}`} />

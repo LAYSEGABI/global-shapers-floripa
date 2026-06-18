@@ -43,7 +43,7 @@ function Navbar() {
           </a>
 
           <a
-            href="#join"
+            href="#join-us"
             className="mobile-cta"
             onClick={closeMenu}
           >
@@ -51,7 +51,7 @@ function Navbar() {
           </a>
         </nav>
 
-        <a href="#join" className="navbar-cta">
+        <a href="#join-us" className="navbar-cta">
           Faça Parte
         </a>
 

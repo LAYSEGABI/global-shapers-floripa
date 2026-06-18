@@ -7,7 +7,7 @@ import BackGroupImg from "../../assets/Images/Back-faca-parte.jpg";
 export default function JoinUs() {
   return (
     <section 
-      className="join-us-section"
+      className="join-us-section" id="join-us"
       style={{
         // O gradiente escuro por cima da imagem garante que o texto branco fique 100% legível
         backgroundImage: `linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 100%), url(${BackGroupImg})`
@@ -15,7 +15,7 @@ export default function JoinUs() {
     >
       <div className="container">
         
-        <div className="grid-2 join-us-grid">
+        <div className="join-us-grid">
           
           {/* COLUNA ESQUERDA: Textos e Requisitos */}
           <div className="join-info">
@@ -105,7 +105,7 @@ export default function JoinUs() {
                   <textarea 
                     id="message" 
                     name="message" 
-                    rows="4" 
+                    rows="1" 
                     required 
                     placeholder="Conte um pouco sobre por que você quer se juntar a nós..."
                   ></textarea>
@@ -116,10 +116,6 @@ export default function JoinUs() {
                 </button>
               </form>
 
-              <div className="form-footer">
-                <p>Estamos sempre em busca de jovens comprometidos em gerar impacto positivo. 
-                Quem sabe o próximo Shaper não seja você?</p>
-              </div>
 
             </div>
           </div>

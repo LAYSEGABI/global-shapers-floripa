@@ -1,36 +1,29 @@
-/* Não precisamos mais importar fontes aqui, pois já estão no global.css */
-
 .community {
-  /* Evita que a animação do carrossel crie uma barra de rolagem embaixo */
   overflow: hidden; 
 }
 
-/* Força a margem abaixo do título já existente no global.css para dar respiro */
 .community .section-title {
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 }
 
 .community-subtitle {
   font-size: 1.25rem; /* 20px no Figma */
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
-/* --- GRID DA CURADORIA --- */
 .curators-grid {
   display: flex;
   justify-content: center;
-  gap: 60px;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
-/* --- CARDS DE PERFIL --- */
 .person-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 160px;
+  width: 150px;
 }
 
 .avatar-wrapper {
@@ -38,9 +31,8 @@
   width: 137px;
   height: 137px;
   margin-bottom: 15px;
-  
+
   border-radius: 50%;
-  /* Usando sua variável global de cor primária */
   border: 3px solid var(--primary); 
   
   display: flex;
@@ -87,7 +79,7 @@
 /* Textos (Herança de fontes já está configurada no seu reset/global) */
 .person-card h4 {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: .9rem;
   color: var(--primary-dark);
   margin: 0 0 5px 0;
 }
@@ -96,6 +88,7 @@
   font-size: 0.875rem;
   color: var(--text-light);
   margin: 0;
+  line-height: 1;
 }
 
 /* No Figma os Membros usam Montserrat */
@@ -107,29 +100,41 @@
 .member-card .member-name {
   font-weight: 500;
 }
-
-/* --- SLIDER DOS MEMBROS --- */
+/* --- SLIDER DOS MEMBROS (ARRASTÁVEL) --- */
 .members-slider {
   width: 100%;
   padding: 10px 0; 
+  overflow-x: auto; 
+  cursor: grab; /* Mostra a mãozinha aberta */
+
+  -ms-overflow-style: none;  /* IE e Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.members-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.members-slider:active {
+  cursor: grabbing;
 }
 
 .members-track {
   display: flex;
-  gap: 30px;
   width: max-content;
-  animation: scrollTrack 60s linear infinite;
+  
+  /* Impede que o clique sem querer nas imagens ou textos tente "arrastar" a imagem nativa do navegador */
+  user-select: none; 
 }
 
-.members-track:hover {
-  animation-play-state: paused;
+.members-track img {
+  pointer-events: none; /* Garante que o mouse pegue a div e não tente salvar a foto ao arrastar */
 }
 
-@keyframes scrollTrack {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+/* A tag <a> precisa de pointer-events normal para o link do LinkedIn continuar funcionando */
+.linkedin-badge {
+  pointer-events: auto; 
 }
-
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
   .curators-grid {
