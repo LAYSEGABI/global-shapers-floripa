@@ -11,6 +11,8 @@ import JoinUs from "./components/JoinUs/JoinUs";
 //import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
 
+import { Analytics } from "@vercel/analytics/react";
+
 function App() {
   return (
     <>
@@ -26,6 +28,8 @@ function App() {
       <Support />
       {/* <Partners /> */}
       <Footer />
+      
+      <Analytics />
     </>
   );
 }
