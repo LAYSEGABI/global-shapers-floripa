@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import logo from "../../assets/Logos/GSF-azul.svg";
 import { useTranslation } from "react-i18next";
-
 
 import FlagPT from "../../assets/Flags/bandeira-do-brasil.jpg";
 import FlagEN from "../../assets/Flags/estados-unidos.jpg";
@@ -10,7 +9,8 @@ import FlagES from "../../assets/Flags/espanha.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  
+  const navbarRef = useRef(null); // Referência para a navbar inteira
+
   const { i18n, t } = useTranslation();
 
   const closeMenu = () => setMenuOpen(false);
@@ -21,10 +21,30 @@ function Navbar() {
     closeMenu(); // Fecha o menu no celular após escolher o idioma
   };
 
+  // Efeito para detectar clique fora da navbar
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Se o clique for fora do elemento que tem a navbarRef, fecha o menu
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        closeMenu();
+      }
+    };
+
+    // Só adiciona o listener de clique se o menu estiver aberto
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      // Limpa o listener quando o componente desmonta ou menu fecha
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
   return (
-    <header className="navbar">
+    <header className="navbar" ref={navbarRef}>
       <div className="container navbar-container">
-        <a href="#hero" className="navbar-logo">
+        <a href="#hero" className="navbar-logo" onClick={closeMenu}>
           <img src={logo} alt="Global Shapers Florianópolis" />
         </a>
 
@@ -98,7 +118,7 @@ function Navbar() {
         </div>
 
         <button
-          className="hamburger"
+          className={`hamburger ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Abrir menu"
         >
@@ -111,4 +131,4 @@ function Navbar() {
   );
 }
 
-export default Navbar; // Apenas um export default no final!
+export default Navbar;

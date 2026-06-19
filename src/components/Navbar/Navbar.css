@@ -7,8 +7,8 @@
 
   padding: 0;
 
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
   background: rgba(255, 255, 255, 0.719);
 
@@ -104,28 +104,27 @@
 
   .navbar-links {
     position: absolute;
-
     top: 100%;
     left: 0;
-
     width: 100%;
 
-    background: white;
+    background: rgba(255, 255, 255, 0.959);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
     flex-direction: column;
     align-items: center;
-
     gap: 24px;
-
     padding: 30px;
 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    /* Borda sutil embaixo e nas laterais para dar contraste */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
     transform: translateY(-20px);
     opacity: 0;
     visibility: hidden;
-
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
   }
 
   .navbar-links.active {
@@ -145,6 +144,7 @@
     border-radius: 10px;
   }
 }
+
 /* --- ESTILOS DO SELETOR DE IDIOMAS --- */
 .navbar-right-actions {
   display: flex;
@@ -155,7 +155,8 @@
 .language-switcher {
   display: flex;
   align-items: center;
-  gap: 10px; /* Aumentei um pouquinho o gap pra caber a borda */
+  gap: 10px;
+  /* Aumentei um pouquinho o gap pra caber a borda */
 }
 
 .language-switcher button {
@@ -175,12 +176,11 @@
   border-radius: 50%;
   object-fit: cover;
   transition: all 0.3s ease;
-  
+
   /* Trocamos o 'border' por um 'box-shadow' transparente */
-  box-shadow: 0 0 0 2px transparent; 
-  
-  opacity: 0.6; 
-  filter: grayscale(40%); 
+  box-shadow: 0 0 0 2px transparent;
+
+  opacity: 0.8;
 }
 
 /* Efeito ao passar o mouse */
@@ -192,14 +192,12 @@
 
 /* EFEITO DO IDIOMA SELECIONADO */
 .language-switcher button.active-lang img {
-  opacity: 1; 
+  opacity: 1;
   filter: grayscale(0%);
-  transform: scale(1.1); 
-  
-  /* O primeiro valor do box-shadow cria a borda azul sem o gap branco, 
-     e o segundo valor mantém a sombrinha de destaque */
+  transform: scale(1.1);
+
   box-shadow: 0 0 0 2px var(--primary), 0 4px 10px rgba(0, 0, 0, 0.15);
-  
+
   /* Preenche qualquer sub-pixel branco que sobrar na curva */
   background-color: var(--primary);
 }
