@@ -1,5 +1,17 @@
 {
-  "aboutGlobal": {
+  "navbar": {
+    "links": {
+      "about": "About us",
+      "community": "Community",
+      "projects": "Projects",
+      "events": "Events",
+      "support": "Support"
+    },
+    "cta": {
+      "join": "Join Us"
+    }
+  },
+    "aboutGlobal": {
     "title": "Global Shapers Community",
     "description1": "The Global Shapers Community is an initiative of the World Economic Forum that connects young leaders from around the world to promote positive impact in their communities and on a global scale.",
     "description2": {

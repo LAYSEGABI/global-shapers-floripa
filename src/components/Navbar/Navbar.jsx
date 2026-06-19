@@ -12,7 +12,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   
   // Puxando a função de tradução
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -30,15 +30,15 @@ function Navbar() {
         </a>
 
         <nav className={`navbar-links ${menuOpen ? "active" : ""}`}>
-          <a href="#about" onClick={closeMenu}>Sobre nós</a>
-          <a href="#community" onClick={closeMenu}>Comunidade</a>
-          <a href="#projects" onClick={closeMenu}>Projetos</a>
-          <a href="#events" onClick={closeMenu}>Eventos</a>
-          <a href="#support" onClick={closeMenu}>Apoie</a>
+          <a href="#about" onClick={closeMenu}>{t('navbar.links.about')}</a>
+          <a href="#community" onClick={closeMenu}>{t('navbar.links.community')}</a>
+          <a href="#projects" onClick={closeMenu}>{t('navbar.links.projects')}</a>
+          <a href="#events" onClick={closeMenu}>{t('navbar.links.events')}</a>
+          <a href="#support" onClick={closeMenu}>{t('navbar.links.support')}</a>
 
           {/* Botão Faça Parte no mobile */}
           <a href="#join-us" className="mobile-cta" onClick={closeMenu}>
-            Faça Parte
+            {t('navbar.cta.join')}
           </a>
 
           {/* Botões de Idioma aparecem dentro do menu no celular */}
@@ -70,7 +70,7 @@ function Navbar() {
           </div>
 
           <a href="#join-us" className="navbar-cta">
-            Faça Parte
+            {t('navbar.cta.join')}
           </a>
         </div>
 
