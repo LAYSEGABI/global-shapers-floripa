@@ -11,6 +11,19 @@
       "join": "Únete"
     }
   },
+
+  "hero": {
+    "shaperBadge": "Avísanos si eres un Shaper visitando la ciudad, ¡haz clic aquí!",
+    "title": "El poder de la juventud en acción!",
+    "description1": "Somos una red global de voluntarios que trabaja en conjunto para debatir y solucionar desafíos locales, regionales y globales, posibilitando un impacto positivo mediante el diálogo y la acción.",
+    "description2": "Nuestra misión es construir una comunidad de jóvenes excelentes en sus habilidades y comprometidos con mejorar el estado del mundo.",
+    "cta": "Saber más",
+    "languageExchange": {
+      "title": "Language Exchange",
+      "subtitle": "Aprendizaje de idiomas para la comunidad Global Shapers.",
+      "cta": "Conoce ahora"
+    }
+  },
   
     "aboutGlobal": {
     "title": "Comunidad Global Shapers",

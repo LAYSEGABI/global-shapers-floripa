@@ -11,6 +11,19 @@
       "join": "Faça Parte"
     }
   },
+
+  "hero": {
+    "shaperBadge": "Nos deixe saber caso você seja um Shaper visitando a cidade, clique aqui!",
+    "title": "O poder da Juventude em ação!",
+    "description1": "Somos uma rede global de pessoas voluntárias trabalhando em conjunto para debater e solucionar desafios locais, regionais e globais, viabilizando o impacto positivo por meio do diálogo e da ação.",
+    "description2": "Nossa missão é construir uma comunidade de jovens excelentes em suas habilidades e com comprometimento em aprimorar o estado do mundo.",
+    "cta": "Saiba Mais",
+    "languageExchange": {
+      "title": "Language Exchange",
+      "subtitle": "Aprendizado de idiomas para a comunidade Global Shapers.",
+      "cta": "Conheça agora"
+    }
+  },
   "aboutGlobal": {
     "title": "Global Shapers Community",
     "description1": "A Global Shapers Community é uma iniciativa do World Economic Forum que conecta jovens líderes de todo o mundo para promover impacto positivo em suas comunidades e em escala global.",
