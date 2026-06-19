@@ -26,5 +26,24 @@
       "members": "Miembros activos en todo el mundo",
       "peopleImpacted": "Personas impactadas"
     }
+  },
+  "events": {
+    "title": "Eventos",
+    "southMeeting": {
+      "title": "Encuentro regional sur",
+      "description": "La Inmersión Sur nació como un espacio para transformar la conexión en acción: acercar personas, fortalecer vínculos entre hubs y reconectar con el territorio que nos atraviesa. En Florianópolis, vivimos una experiencia que fue más allá de un encuentro: fue sobre construir juntos. La isla fue el punto de partida. El impacto, lo llevamos adelante."
+    },
+    "summit": {
+      "title": "Summit 2026/2027",
+      "description1": "Realizado en Ginebra, Suiza, el Global Shapers Annual Summit es el principal encuentro mundial de la comunidad Global Shapers, reuniendo a jóvenes líderes de cientos de ciudades para compartir experiencias, fortalecer conexiones y cocreар soluciones para los desafíos más urgentes del mundo.",
+      "description2": "El Summit ofrece una oportunidad única para ampliar perspectivas, desarrollar nuevas competencias y conectar con una red global de agentes de cambio comprometidos con la construcción de un futuro más sustentable, inclusivo y resiliente.",
+      "description3": "Por medio de conferencias, talleres, diálogos estratégicos y actividades colaborativas, los participantes acceden a debates de relevancia global, intercambios interculturales y conexiones que fortalecen iniciativas de impacto en sus comunidades alrededor del mundo."
+    },
+    "nationalMeeting": {
+      "title": "Encuentro nacional",
+      "description1": "El Encuentro Nacional Global Shapers Brasil 2026 ya tiene destino definido: Belém, puerta de entrada a la Amazonia y símbolo de la riqueza cultural y ambiental de nuestro país.",
+      "description2": "En los días 18, 19 y 20 de septiembre de 2026, Shapers de todo Brasil se reunirán para una jornada transformadora de aprendizaje, conexión y construcción colectiva. Serán tres días de experiencias inmersivas, intercambios inspiradores y colaboración para impulsar soluciones innovadoras para los desafíos del presente y del futuro.",
+      "description3": "Durante el encuentro, los participantes podrán vivenciar: Experiencias inmersivas e inspiradoras; Conexión con la cultura, los saberes y los territorios amazónicos; Talleres, paneles y diálogos de alto impacto; Networking cualificado con líderes y agentes de transformación de todo el país; Espacios de cocreación y desarrollo de soluciones para desafíos reales."
+    }
   }
 }

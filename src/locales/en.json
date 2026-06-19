@@ -26,5 +26,24 @@
       "members": "Active members around the world",
       "peopleImpacted": "People impacted"
     }
+  },
+  "events": {
+    "title": "Events",
+    "southMeeting": {
+      "title": "South regional meeting",
+      "description": "The South Immersion was born as a space to transform connection into action: bringing people together, strengthening bonds between hubs, and reconnecting with the territory that moves us. In Florianópolis, we lived an experience that went beyond a meeting: it was about building together. The island was the starting point. The impact, we carry forward."
+    },
+    "summit": {
+      "title": "Summit 2026/2027",
+      "description1": "Held in Geneva, Switzerland, the Global Shapers Annual Summit is the world's leading gathering of the Global Shapers community, bringing together young leaders from hundreds of cities to share experiences, strengthen connections, and co-create solutions for the world's most pressing challenges.",
+      "description2": "The Summit offers a unique opportunity to broaden perspectives, develop new competencies, and connect with a global network of change agents committed to building a more sustainable, inclusive, and resilient future.",
+      "description3": "Through lectures, workshops, strategic dialogues, and collaborative activities, participants gain access to globally relevant debates, intercultural exchanges, and connections that strengthen impact initiatives in their communities around the world."
+    },
+    "nationalMeeting": {
+      "title": "National meeting",
+      "description1": "The Global Shapers Brazil National Meeting 2026 has already set its destination: Belém, the gateway to the Amazon and symbol of our country's cultural and environmental wealth.",
+      "description2": "On September 18-20, 2026, Shapers from across Brazil will gather for a transformative journey of learning, connection, and collective building. These three days will feature immersive experiences, inspiring exchanges, and collaboration to drive innovative solutions for present and future challenges.",
+      "description3": "During the meeting, participants will experience: Immersive and inspiring experiences; Connection with Amazon culture, knowledge, and territories; High-impact workshops, panels, and dialogues; Quality networking with leaders and change agents from across the country; Spaces for co-creation and development of solutions for real challenges."
+    }
   }
 }
