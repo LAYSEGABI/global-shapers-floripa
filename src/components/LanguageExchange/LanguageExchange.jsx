@@ -11,6 +11,7 @@ import BrazilFlag from "../../assets/Flags/bandeira-do-brasil.jpg";
 import CoreiaDoSul from "../../assets/Flags/coreia-do-sul.png";
 import Alemanha from "../../assets/Flags/alemanha.png";
 import ReinoUnido from "../../assets/Flags/reino-unido.png";
+import Espanha from "../../assets/Flags/espanha.png";
 
 export default function LanguageExchange() {
   return (
@@ -42,6 +43,7 @@ export default function LanguageExchange() {
 
             <div className="le-flags-container">
               <img src={UsaFlag} alt="Bandeira dos Estados Unidos" className="flag-icon" />
+              <img src={Espanha} alt="Bandeira da Espanha" className="flag-icon" />
               <img src={ChinaFlag} alt="Bandeira da China" className="flag-icon" />
               <img src={FranceFlag} alt="Bandeira da França" className="flag-icon" />
               <img src={SouthAfricaFlag} alt="Bandeira da África do Sul" className="flag-icon" />

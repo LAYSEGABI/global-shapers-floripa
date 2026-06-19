@@ -1,59 +1,78 @@
 import { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/Logos/GSF-azul.svg";
+import { useTranslation } from "react-i18next";
+
+// Importando as imagens das bandeiras que você já tem
+import FlagPT from "../../assets/Flags/bandeira-do-brasil.jpg";
+import FlagEN from "../../assets/Flags/estados-unidos.jpg";
+import FlagES from "../../assets/Flags/espanha.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  
+  // Puxando a função de tradução
+  const { i18n } = useTranslation();
 
   const closeMenu = () => setMenuOpen(false);
+
+  // Função que troca o idioma
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    closeMenu(); // Fecha o menu no celular após escolher o idioma
+  };
 
   return (
     <header className="navbar">
       <div className="container navbar-container">
         <a href="#hero" className="navbar-logo">
-          <img
-            src={logo}
-            alt="Global Shapers Florianópolis"
-          />
+          <img src={logo} alt="Global Shapers Florianópolis" />
         </a>
 
         <nav className={`navbar-links ${menuOpen ? "active" : ""}`}>
-          <a href="#about" onClick={closeMenu}>
-            Sobre nós
-          </a>
+          <a href="#about" onClick={closeMenu}>Sobre nós</a>
+          <a href="#community" onClick={closeMenu}>Comunidade</a>
+          <a href="#projects" onClick={closeMenu}>Projetos</a>
+          <a href="#events" onClick={closeMenu}>Eventos</a>
+          <a href="#support" onClick={closeMenu}>Apoie</a>
 
-          <a href="#community" onClick={closeMenu}>
-            Comunidade
-          </a>
-
-          <a href="#projects" onClick={closeMenu}>
-            Projetos
-          </a>
-
-          <a href="#events" onClick={closeMenu}>
-            Eventos
-          </a>
-
-          {/* <a href="#partners" onClick={closeMenu}>
-            Parceiros
-          </a> */}
-
-          <a href="#support" onClick={closeMenu}>
-            Apoie
-          </a>
-
-          <a
-            href="#join-us"
-            className="mobile-cta"
-            onClick={closeMenu}
-          >
+          {/* Botão Faça Parte no mobile */}
+          <a href="#join-us" className="mobile-cta" onClick={closeMenu}>
             Faça Parte
           </a>
+
+          {/* Botões de Idioma aparecem dentro do menu no celular */}
+          <div className="language-switcher mobile-langs">
+            <button onClick={() => changeLanguage('pt')} title="Português">
+              <img src={FlagPT} alt="PT" />
+            </button>
+            <button onClick={() => changeLanguage('en')} title="English">
+              <img src={FlagEN} alt="EN" />
+            </button>
+            <button onClick={() => changeLanguage('es')} title="Español">
+              <img src={FlagES} alt="ES" />
+            </button>
+          </div>
         </nav>
 
-        <a href="#join-us" className="navbar-cta">
-          Faça Parte
-        </a>
+        {/* Grupo da direita (Botões de Idioma + Faça Parte no Desktop) */}
+        <div className="navbar-right-actions">
+          <div className="language-switcher desktop-langs">
+            <button onClick={() => changeLanguage('pt')} title="Português">
+              <img src={FlagPT} alt="PT" />
+            </button>
+            <button onClick={() => changeLanguage('en')} title="English">
+              <img src={FlagEN} alt="EN" />
+            </button>
+            <button onClick={() => changeLanguage('es')} title="Español">
+              <img src={FlagES} alt="ES" />
+            </button>
+          </div>
+
+          <a href="#join-us" className="navbar-cta">
+            Faça Parte
+          </a>
+        </div>
 
         <button
           className="hamburger"
@@ -69,4 +88,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar; // Apenas um export default no final!
