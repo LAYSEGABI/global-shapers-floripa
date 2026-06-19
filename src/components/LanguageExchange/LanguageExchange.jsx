@@ -33,7 +33,7 @@ export default function LanguageExchange() {
 
             <p className="le-description">{t('languageExchange.description')}</p>
 
-            <a href="#conheca-agora" className="le-btn">
+            <a href="https://languageexchange.globalshapersflorianopolis.com.br/" className="le-btn" target="_blank" rel="noopener noreferrer">
               {t('languageExchange.cta')}
               <MousePointerClick size={18} strokeWidth={2} />
             </a>

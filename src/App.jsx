@@ -1,38 +1,17 @@
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import LanguageExchange from "./components/LanguageExchange/LanguageExchange";
-import AboutGlobal from "./components/AboutGlobal/AboutGlobal";
-import AboutFloripa from "./components/AboutFloripa/AboutFloripa";
-import Community from "./components/Community/Community";
-import Projects from "./components/Projects/Projects";
-import Events from "./components/Events/Events";
-import Support from "./components/Support/Support";
-import JoinUs from "./components/JoinUs/JoinUs";
-//import Partners from "./components/Partners/Partners";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <AboutGlobal />
-      <AboutFloripa />
-      <Community />
-      <Projects />
-      <LanguageExchange />
-      <Events />
-      <JoinUs />
-      <Support />
-      {/* <Partners /> */}
-      <Footer />
-
-      <Analytics />
-      <SpeedInsights />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projetos" element={<Projects />} />
+   
+      </Routes>
+    </BrowserRouter>
   );
 }
 

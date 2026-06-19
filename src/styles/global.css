@@ -15,6 +15,27 @@ body {
   overflow-x: hidden;
 }
 
+/* Largura da barra */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+/* Parte que desliza */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* Quando passa o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
 .container {
   width: min(1480px, calc(100% - 48px));
   padding: 0 24px;
@@ -54,7 +75,7 @@ p {
   gap: 5px;
   background-color: rgba(84, 119, 214, 0.089);
 
-  padding: 6px 20px;
+  padding: 4px 15px;
 
   border: 2px solid var(--primary);
 

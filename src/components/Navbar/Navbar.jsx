@@ -3,7 +3,7 @@ import "./Navbar.css";
 import logo from "../../assets/Logos/GSF-azul.svg";
 import { useTranslation } from "react-i18next";
 
-// Importando as imagens das bandeiras que você já tem
+
 import FlagPT from "../../assets/Flags/bandeira-do-brasil.jpg";
 import FlagEN from "../../assets/Flags/estados-unidos.jpg";
 import FlagES from "../../assets/Flags/espanha.png";
@@ -11,7 +11,6 @@ import FlagES from "../../assets/Flags/espanha.png";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   
-  // Puxando a função de tradução
   const { i18n, t } = useTranslation();
 
   const closeMenu = () => setMenuOpen(false);

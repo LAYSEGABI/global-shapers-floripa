@@ -55,7 +55,7 @@ function Hero() {
                 <p>{t("hero.languageExchange.subtitle")}</p>
 
                 <div className="le-action-group">
-                  <a href="#" className="le-action-btn">
+                  <a href="https://languageexchange.globalshapersflorianopolis.com.br/" className="le-action-btn" target="_blank" rel="noopener noreferrer">
                     {t("hero.languageExchange.cta")}{" "}
                     <MousePointerClick size={14} />
                   </a>

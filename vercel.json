@@ -1,16 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/ecotrilhas/:path*",
-      "destination": "https://ecotrilhas.vercel.app/:path*"
+      "source": "/languageexchange",
+      "destination": "https://language-exchange-five.vercel.app/"
     },
     {
-      "source": "/ecotrilhas",
-      "destination": "https://ecotrilhas.vercel.app"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/languageexchange/:match*",
+      "destination": "https://language-exchange-five.vercel.app/:match*"
     }
   ]
 }

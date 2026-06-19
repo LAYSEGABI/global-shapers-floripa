@@ -19,7 +19,7 @@ const projectsList = [
     descriptionKey: "projects.ecotrilhas.description",
     coverImg: EcotrilhasCover,
     logoImg: EcotrilhasLogo,
-    link: "/ecotrilhas",
+    link: "https://ecotrilhas.globalshapersflorianopolis.com.br/",
   },
   {
     id: "foco",
@@ -28,7 +28,7 @@ const projectsList = [
     descriptionKey: "projects.foco.description",
     coverImg: FocoCover,
     logoImg: FocoLogo,
-    link: "/projetos",
+    link: "https://www.instagram.com/globalshapersfloripa/",
   },
   {
     id: "shaper",
@@ -37,7 +37,7 @@ const projectsList = [
     descriptionKey: "projects.shaper.description",
     coverImg: ShaperCover,
     logoImg: ShaperLogo,
-    link: "/projetos",
+    link: "https://www.instagram.com/globalshapersfloripa/",
   }
 ];
 
@@ -84,7 +84,7 @@ export default function Projects() {
 
               {/* Botão Saiba Mais alinhado à esquerda */}
               <div className="project-link-wrapper">
-                <a href={project.link} className="project-link">
+                <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
                   {t("projects.learnMore")} <ArrowRight size={18} />
                 </a>
               </div>
@@ -95,7 +95,7 @@ export default function Projects() {
 
         {/* Botão final usando a sua classe global primária */}
         <div className="projects-footer">
-          <a href="/projetos" className="primary-btn">
+          <a href="https://www.instagram.com/globalshapersfloripa/" className="primary-btn" target="_blank" rel="noopener noreferrer">
             {t("projects.viewMore")}
           </a>
         </div>
