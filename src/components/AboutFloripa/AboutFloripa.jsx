@@ -1,6 +1,7 @@
 import "./AboutFloripa.css";
 import PhotoMarquee from "../PhotoMarquee/PhotoMarquee";
 import EncontroSul2026 from "../../assets/Images/EncontroSul2026.png";
+import { useTranslation } from "react-i18next";
 import { MapPin, Target, CalendarDays } from "lucide-react";
 import Foto1 from "../../assets/Images/Foto1.jpg";
 import Foto2 from "../../assets/Images/Foto2.jpg";
@@ -19,6 +20,8 @@ const galleryImages = [
 ];
 
 function AboutFloripa() {
+  const { t } = useTranslation();
+
   return (
     <section className="about-floripa">
       <div className="container">
@@ -26,42 +29,24 @@ function AboutFloripa() {
           <div className="about-floripa-text">
             <div className="section-title">
               <MapPin size={24} strokeWidth={1.8} />
-              <span>Global Shapers Florianópolis</span>
+              <span>{t("aboutFloripa.title")}</span>
             </div>
 
-            <p>
-              Somos uma comunidade de jovens que acreditam no poder da ação
-              coletiva para transformar realidades.
-            </p>
+            <p>{t("aboutFloripa.description1")}</p>
 
-            <p>
-              Integramos a Global Shapers Community, iniciativa do Fórum
-              Econômico Mundial, que conecta jovens líderes de diferentes partes
-              do mundo em torno de um propósito comum: construir soluções para
-              os desafios do nosso tempo.
-            </p>
+            <p>{t("aboutFloripa.description2")}</p>
 
-            <p>
-              Em Florianópolis, reunimos pessoas inquietas, criativas e
-              comprometidas com o impacto positivo.
-            </p>
+            <p>{t("aboutFloripa.description3")}</p>
           </div>
 
           <div className="legacy-card">
-            <p>
-              O Hub Florianópolis carrega uma trajetória construída por
-              diferentes gerações de shapers.
-            </p>
+            <p>{t("aboutFloripa.legacy1")}</p>
 
-            <p>
-              Mantemos vivo esse legado por meio da colaboração entre
-              integrantes ativos e alumnis, conectando passado, presente e
-              futuro.
-            </p>
+            <p>{t("aboutFloripa.legacy2")}</p>
 
             <div className="legacy-date">
               <CalendarDays size={18} color="var(--primary)" />
-              <span>Fundado em 2014 por Diego Calegari</span>
+              <span>{t("aboutFloripa.legacyDate")}</span>
             </div>
           </div>
         </div>
@@ -74,31 +59,20 @@ function AboutFloripa() {
           <div className="focus-text">
             <div className="section-title">
               <Target size={24} strokeWidth={1.8} />
-              <span> Nosso foco </span>
+              <span>{t("aboutFloripa.focusTitle")}</span>
             </div>
 
-            <p>
-              Acreditamos que grandes transformações acontecem quando pessoas
-              diversas se conectam em torno de causas comuns.
-            </p>
+            <p>{t("aboutFloripa.focus1")}</p>
 
-            <p>
-              Nosso foco é desenvolver projetos, fortalecer jovens lideranças e
-              criar pontes entre diferentes setores da sociedade para responder
-              aos desafios de Florianópolis.
-            </p>
+            <p>{t("aboutFloripa.focus2")}</p>
 
-            <p>
-              Além disso, atuamos como uma rede de colaboração que mobiliza
-              talentos, compartilha conhecimento e impulsiona iniciativas com
-              potencial de gerar impacto social, ambiental e econômico.
-            </p>
+            <p>{t("aboutFloripa.focus3")}</p>
           </div>
 
           <div className="focus-image">
             <img src={EncontroSul2026} alt="Encontro Regional Sul 2026" />
 
-            <div className="focus-badge">Encontro Regional Sul 2026</div>
+            <div className="focus-badge">{t("aboutFloripa.focusBadge")}</div>
           </div>
         </div>
       </div>

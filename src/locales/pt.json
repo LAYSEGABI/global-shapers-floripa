@@ -52,6 +52,20 @@
       "peopleImpacted": "Pessoas impactadas"
     }
   },
+  "aboutFloripa": {
+    "title": "Global Shapers Florianópolis",
+    "description1": "Somos uma comunidade de jovens que acreditam no poder da ação coletiva para transformar realidades.",
+    "description2": "Integramos a Global Shapers Community, iniciativa do Fórum Econômico Mundial, que conecta jovens líderes de diferentes partes do mundo em torno de um propósito comum: construir soluções para os desafios do nosso tempo.",
+    "description3": "Em Florianópolis, reunimos pessoas inquietas, criativas e comprometidas com o impacto positivo.",
+    "legacy1": "O Hub Florianópolis carrega uma trajetória construída por diferentes gerações de shapers.",
+    "legacy2": "Mantemos vivo esse legado por meio da colaboração entre integrantes ativos e alumnis, conectando passado, presente e futuro.",
+    "legacyDate": "Fundado em 2014 por Diego Calegari",
+    "focusTitle": "Nosso foco",
+    "focus1": "Acreditamos que grandes transformações acontecem quando pessoas diversas se conectam em torno de causas comuns.",
+    "focus2": "Nosso foco é desenvolver projetos, fortalecer jovens lideranças e criar pontes entre diferentes setores da sociedade para responder aos desafios de Florianópolis.",
+    "focus3": "Além disso, atuamos como uma rede de colaboração que mobiliza talentos, compartilha conhecimento e impulsiona iniciativas com potencial de gerar impacto social, ambiental e econômico.",
+    "focusBadge": "Encontro Regional Sul 2026"
+  },
   "languageExchange": {
     "title": "Language Exchange",
     "description": "O projeto Language Exchange é uma iniciativa criada para fortalecer as conexões globais dentro da Comunidade Global Shapers por meio da troca de idiomas e experiências culturais.",

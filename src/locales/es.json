@@ -53,6 +53,20 @@
       "peopleImpacted": "Personas impactadas"
     }
   },
+  "aboutFloripa": {
+    "title": "Global Shapers Florianópolis",
+    "description1": "Somos una comunidad de jóvenes que creen en el poder de la acción colectiva para transformar realidades.",
+    "description2": "Formamos parte de la Global Shapers Community, iniciativa del Foro Económico Mundial que conecta a jóvenes líderes de diferentes partes del mundo en torno a un propósito común: construir soluciones para los desafíos de nuestro tiempo.",
+    "description3": "En Florianópolis, reunimos a personas inquietas, creativas y comprometidas con el impacto positivo.",
+    "legacy1": "El Hub Florianópolis lleva una trayectoria construida por diferentes generaciones de shapers.",
+    "legacy2": "Mantenemos vivo este legado mediante la colaboración entre integrantes activos y alumni, conectando pasado, presente y futuro.",
+    "legacyDate": "Fundado en 2014 por Diego Calegari",
+    "focusTitle": "Nuestro foco",
+    "focus1": "Creemos que las grandes transformaciones ocurren cuando personas diversas se conectan en torno a causas comunes.",
+    "focus2": "Nuestro foco es desarrollar proyectos, fortalecer liderazgos jóvenes y crear puentes entre diferentes sectores de la sociedad para responder a los desafíos de Florianópolis.",
+    "focus3": "Además, actuamos como una red de colaboración que moviliza talentos, comparte conocimiento e impulsa iniciativas con potencial de generar impacto social, ambiental y económico.",
+    "focusBadge": "Encuentro Regional Sur 2026"
+  },
 
   "languageExchange": {
 "title": "Intercambio de Idiomas",
