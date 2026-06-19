@@ -24,7 +24,7 @@
       "cta": "Discover now"
     }
   },
-    "aboutGlobal": {
+  "aboutGlobal": {
     "title": "Global Shapers Community",
     "description1": "The Global Shapers Community is an initiative of the World Economic Forum that connects young leaders from around the world to promote positive impact in their communities and on a global scale.",
     "description2": {
@@ -93,10 +93,10 @@
     }
   },
   "languageExchange": {
-"title": "Language Exchange",
-"description": "The Language Exchange project is an initiative created to strengthen global connections within the Global Shapers Community through the exchange of languages and cultural experiences.",
-"cta": "Discover now"
-},
+    "title": "Language Exchange",
+    "description": "The Language Exchange project is an initiative created to strengthen global connections within the Global Shapers Community through the exchange of languages and cultural experiences.",
+    "cta": "Discover now"
+  },
   "events": {
     "title": "Events",
     "southMeeting": {
@@ -155,6 +155,32 @@
         "message": "Tell us a little about why you want to join us..."
       },
       "cta": "Send"
+    }
+  },
+  "support": {
+    "sectionTitle": "Support",
+    "breshapersAlt": "Breshapers banner",
+    "breshapers": {
+      "title": "Breshapers",
+      "description1": "Breshapers is an initiative that turns donations into social impact through the sale of affordable clothing and accessories. Created in response to the floods that hit Rio Grande do Sul in 2024, the project evolved into a fundraising platform designed to support impactful projects and actions.",
+      "description2": "In addition to raising funds, Breshapers promotes conscious consumption and circular economy by encouraging reuse of pieces and generating positive impact in communities.",
+      "button": "Discover Breshapers"
+    },
+    "pix": {
+      "title": "Be part of this transformation",
+      "subtitle": "Build a better future, support our actions",
+      "qrAlt": "QR Code for Pix donation",
+      "copied": "Copied!",
+      "copyButton": "Copy QR Code key",
+      "divider": "Or use the Pix key",
+      "keyLabel": "Pix key",
+      "keyValue": "Random key",
+      "nameLabel": "Name",
+      "nameValue": "Gabrielle Wuislla Bonette Schneider",
+      "cpfLabel": "CPF",
+      "cpfValue": "***.236.939-**",
+      "bankLabel": "Bank",
+      "bankValue": "260 - Nu Pagamentos S.A."
     }
   }
 }

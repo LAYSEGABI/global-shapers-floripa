@@ -158,5 +158,31 @@
       },
       "cta": "Enviar"
     }
+  },
+  "support": {
+    "sectionTitle": "Apoya",
+    "breshapersAlt": "Banner de Breshapers",
+    "breshapers": {
+      "title": "Breshapers",
+      "description1": "Breshapers es una iniciativa que convierte donaciones en impacto social mediante la venta de ropa y accesorios a precios accesibles. Creado en respuesta a las inundaciones que afectaron a Rio Grande do Sul en 2024, el proyecto evolucionó hacia una herramienta de recaudación de fondos destinada a financiar proyectos y acciones de impacto.",
+      "description2": "Además de recaudar fondos, Breshapers promueve el consumo responsable y la economía circular, incentivando la reutilización de prendas y generando un impacto positivo en las comunidades.",
+      "button": "Conoce Breshapers"
+    },
+    "pix": {
+      "title": "Forma parte de esta transformación",
+      "subtitle": "Construye un futuro mejor, apoya nuestras acciones",
+      "qrAlt": "Código QR para donación vía Pix",
+      "copied": "¡Copiado!",
+      "copyButton": "Copiar código del QR",
+      "divider": "O usa la clave Pix",
+      "keyLabel": "Clave Pix",
+      "keyValue": "Clave aleatoria",
+      "nameLabel": "Nombre",
+      "nameValue": "Gabrielle Wuislla Bonette Schneider",
+      "cpfLabel": "CPF",
+      "cpfValue": "***.236.939-**",
+      "bankLabel": "Banco",
+      "bankValue": "260 - Nu Pagamentos S.A."
+    }
   }
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Support.css";
 import { HeartHandshake, Copy, Check, ExternalLink } from "lucide-react";
 import confetti from "canvas-confetti";
@@ -9,6 +10,7 @@ import QrCodeImg from "../../assets/Images/QRCode-apoio.png";
 
 export default function Support() {
   const [copied, setCopied] = useState(false);
+  const { t } = useTranslation();
   
   // Coloque aqui a chave Pix aleatória real
   const pixKey = "123e4567-e89b-12d3-a456-426614174000"; 
@@ -37,7 +39,7 @@ export default function Support() {
         <div className="title-wrapper text-center">
           <div className="section-title">
             <HeartHandshake size={24} strokeWidth={1.5} />
-            <span>Apoie</span>
+            <span>{t("support.sectionTitle")}</span>
           </div>
         </div>
 
@@ -46,20 +48,16 @@ export default function Support() {
           {/* CARD 1: BRESHAPERS */}
           <div className="card support-card">
             <div className="breshapers-img-wrapper">
-              <img src={BreshapersImg} alt="Banner Breshapers" />
+              <img src={BreshapersImg} alt={t("support.breshapersAlt")} />
             </div>
             
             <div className="support-card-content">
-              <h3>Breshapers</h3>
+              <h3>{t("support.breshapers.title")}</h3>
               <p>
-                O Breshapers é uma iniciativa que transforma doações em impacto social por meio da venda de 
-                roupas e acessórios a preços acessíveis. Criado em resposta às enchentes que atingiram o Rio Grande 
-                do Sul em 2024, o projeto evoluiu para uma ferramenta de captação de recursos destinada ao 
-                financiamento de projetos e ações de impacto. 
+                {t("support.breshapers.description1")}
               </p>
               <p>
-                Além de arrecadar fundos, o Breshapers promove o consumo consciente e a economia circular, 
-                incentivando a reutilização de peças e gerando impacto positivo nas comunidades.
+                {t("support.breshapers.description2")}
               </p>
               
               <div className="support-action">
@@ -69,7 +67,7 @@ export default function Support() {
                   rel="noreferrer" 
                   className="secondary-btn breshapers-btn"
                 >
-                  Conheça o Breshapers <ExternalLink size={18} />
+                  {t("support.breshapers.button")} <ExternalLink size={18} />
                 </a>
               </div>
             </div>
@@ -78,11 +76,11 @@ export default function Support() {
           {/* CARD 2: PIX */}
           <div className="card support-card pix-card">
             <div className="support-card-content text-center">
-              <h3>Faça parte dessa transformação</h3>
-              <span className="pix-subtitle">Construa um futuro melhor, apoie nossas ações</span>
+              <h3>{t("support.pix.title")}</h3>
+              <span className="pix-subtitle">{t("support.pix.subtitle")}</span>
               
               <div className="qr-code-wrapper">
-                <img src={QrCodeImg} alt="QR Code para doação via Pix" />
+                <img src={QrCodeImg} alt={t("support.pix.qrAlt")} />
               </div>
 
               <button 
@@ -90,31 +88,31 @@ export default function Support() {
                 className={`primary-btn copy-btn ${copied ? 'copied' : ''}`}
               >
                 {copied ? <Check size={18} /> : <Copy size={18} />}
-                {copied ? "Copiado!" : "Copiar código do QR Code"}
+                {copied ? t("support.pix.copied") : t("support.pix.copyButton")}
               </button>
 
               <div className="pix-divider">
-                <span>Ou use a chave Pix</span>
+                <span>{t("support.pix.divider")}</span>
               </div>
 
               <div className="pix-details">
                 <div className="pix-row">
-                  <span className="pix-label">Chave Pix</span>
+                  <span className="pix-label">{t("support.pix.keyLabel")}</span>
                   <span className="pix-value highlight" onClick={handleCopyPix}>
-                    Chave Aleatória <Copy size={14} />
+                    {t("support.pix.keyValue")} <Copy size={14} />
                   </span>
                 </div>
                 <div className="pix-row">
-                  <span className="pix-label">Nome</span>
-                  <span className="pix-value">Gabrielle Wuislla Bonette Schneider</span>
+                  <span className="pix-label">{t("support.pix.nameLabel")}</span>
+                  <span className="pix-value">{t("support.pix.nameValue")}</span>
                 </div>
                 <div className="pix-row">
-                  <span className="pix-label">CPF</span>
-                  <span className="pix-value">***.236.939-**</span>
+                  <span className="pix-label">{t("support.pix.cpfLabel")}</span>
+                  <span className="pix-value">{t("support.pix.cpfValue")}</span>
                 </div>
                 <div className="pix-row">
-                  <span className="pix-label">Banco</span>
-                  <span className="pix-value">260 - Nu Pagamentos S.A.</span>
+                  <span className="pix-label">{t("support.pix.bankLabel")}</span>
+                  <span className="pix-value">{t("support.pix.bankValue")}</span>
                 </div>
               </div>
 
