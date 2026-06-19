@@ -62,5 +62,46 @@
       "description2": "Nos dias 18, 19 e 20 de setembro de 2026, Shapers de todo o Brasil se reunirão para uma jornada transformadora de aprendizado, conexão e construção coletiva. Serão três dias de experiências imersivas, trocas inspiradoras e colaboração para impulsionar soluções inovadoras para os desafios do presente e do futuro.",
       "description3": "Durante o encontro, os participantes poderão vivenciar: Experiências imersivas e inspiradoras; Conexão com a cultura, os saberes e os territórios amazônicos; Workshops, painéis e diálogos de alto impacto; Networking qualificado com lideranças e agentes de transformação de todo o país; Espaços de cocriação e desenvolvimento de soluções para desafios reais."
     }
+  },
+  "joinUs": {
+    "title": "Faça parte",
+    "intro": {
+      "part1": "Buscamos jovens que desejam gerar",
+      "highlight": "impacto positivo",
+      "part2": "em suas comunidades e contribuir para a construção de uma sociedade mais colaborativa, inovadora e sustentável."
+    },
+    "requirements": {
+      "title": "Para participar da Global Shapers Florianópolis, é importante:",
+      "location": "Residir em Florianópolis ou na Grande Florianópolis;",
+      "age": "Ter até 27 anos no momento da candidatura;",
+      "availability": "Ter disponibilidade para participar das reuniões do Hub (geralmente à noite) e ações aos finais de semana;",
+      "interest": "Demonstrar interesse genuíno em promover mudanças positivas;",
+      "teamwork": "Ter disposição para colaborar em equipe e construir soluções;",
+      "values": "Estar alinhado aos valores de liderança, diversidade, inclusão e engajamento comunitário."
+    },
+    "outro": {
+      "part1": "Mais do que experiência ou currículo, buscamos pessoas engajadas, colaborativas e",
+      "highlight": "motivadas a fazer a diferença",
+      "part2": "Queremos conhecer sua história!"
+    },
+    "form": {
+      "title": "Demonstre seu interesse",
+      "description": {
+        "part1": "Em breve divulgaremos as datas do próximo processo seletivo.",
+        "part2": "Deixe seu contato para avisarmos você assim que as inscrições abrirem!"
+      },
+      "subject": "Novo interesse - Global Shapers Floripa",
+      "label": {
+        "name": "Nome completo",
+        "email": "E-mail",
+        "message": "Qual sua motivação para fazer parte do HUB?"
+      },
+      "placeholder": {
+        "name": "Digite seu nome",
+        "email": "seu@email.com",
+        "message": "Conte um pouco sobre por que você quer se juntar a nós..."
+      },
+      "cta": "Enviar"
+    }
   }
 }

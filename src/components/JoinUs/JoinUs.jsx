@@ -1,10 +1,12 @@
 import "./JoinUs.css";
 import { UserPlus, CheckCircle2, Send } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // Importe a imagem de fundo do grupo (ajuste o caminho se necessário)
 import BackGroupImg from "../../assets/Images/Back-faca-parte.jpg"; 
 
 export default function JoinUs() {
+  const { t } = useTranslation();
   return (
     <section 
       className="join-us-section" id="join-us"
@@ -23,48 +25,44 @@ export default function JoinUs() {
             {/* Pill de título adaptado para fundo escuro */}
             <div className="section-title dark-theme-title">
               <UserPlus size={24} strokeWidth={1.5} />
-              <span>Faça parte</span>
+              <span>{t("joinUs.title")}</span>
             </div>
-
             <p className="join-intro">
-              Buscamos jovens que desejam gerar <strong>impacto positivo</strong> em suas 
-              comunidades e contribuir para a construção de uma sociedade mais 
-              colaborativa, inovadora e sustentável.
+              {t("joinUs.intro.part1")} <strong>{t("joinUs.intro.highlight")}</strong> {t("joinUs.intro.part2")}
             </p>
 
             <div className="requirements-box">
-              <h3>Para participar da Global Shapers Florianópolis, é importante:</h3>
+              <h3>{t("joinUs.requirements.title")}</h3>
               <ul className="requirements-list">
                 <li>
                   <CheckCircle2 size={20} className="check-icon" />
-                  <span>Residir em Florianópolis ou na Grande Florianópolis;</span>
+                  <span>{t("joinUs.requirements.location")}</span>
                 </li>
                 <li>
                   <CheckCircle2 size={20} className="check-icon" />
-                  <span>Ter até 27 anos no momento da candidatura;</span>
+                  <span>{t("joinUs.requirements.age")}</span>
                 </li>
                 <li>
                   <CheckCircle2 size={20} className="check-icon" />
-                  <span>Ter disponibilidade para participar das reuniões do Hub (geralmente à noite) e ações aos finais de semana;</span>
+                  <span>{t("joinUs.requirements.availability")}</span>
                 </li>
                 <li>
                   <CheckCircle2 size={20} className="check-icon" />
-                  <span>Demonstrar interesse genuíno em promover mudanças positivas;</span>
+                  <span>{t("joinUs.requirements.interest")}</span>
                 </li>
                 <li>
                   <CheckCircle2 size={20} className="check-icon" />
-                  <span>Ter disposição para colaborar em equipe e construir soluções;</span>
+                  <span>{t("joinUs.requirements.teamwork")}</span>
                 </li>
                 <li>
                   <CheckCircle2 size={20} className="check-icon" />
-                  <span>Estar alinhado aos valores de liderança, diversidade, inclusão e engajamento comunitário.</span>
+                  <span>{t("joinUs.requirements.values")}</span>
                 </li>
               </ul>
             </div>
 
             <p className="join-outro">
-              Mais do que experiência ou currículo, buscamos pessoas engajadas, colaborativas e 
-              <strong> motivadas a fazer a diferença</strong>. Queremos conhecer sua história!
+              {t("joinUs.outro.part1")} <strong>{t("joinUs.outro.highlight")}</strong>. {t("joinUs.outro.part2")}
             </p>
           </div>
 
@@ -74,10 +72,9 @@ export default function JoinUs() {
             <div className="glass-card form-card">
               
               <div className="form-header">
-                <h3>Demonstre seu interesse</h3>
+                <h3>{t("joinUs.form.title")}</h3>
                 <p>
-                  Em breve divulgaremos as datas do próximo processo seletivo. 
-                  Deixe seu contato para avisarmos você assim que as inscrições abrirem!
+                  {t("joinUs.form.description.part1")} {t("joinUs.form.description.part2")}
                 </p>
               </div>
 
@@ -88,31 +85,31 @@ export default function JoinUs() {
                 <input type="hidden" name="access_key" value="f544e5eb-31a6-4483-9f10-18ec2e50683c" />
                 
                 {/* Campo extra recomendado pelo Web3Forms */}
-                <input type="hidden" name="subject" value="Novo interesse - Global Shapers Floripa" />
+                <input type="hidden" name="subject" value={t("joinUs.form.subject")}/>
 
                 <div className="input-group">
-                  <label htmlFor="name">Nome completo</label>
-                  <input type="text" id="name" name="name" required placeholder="Digite seu nome" />
+                  <label htmlFor="name">{t("joinUs.form.label.name")}</label>
+                  <input type="text" id="name" name="name" required placeholder={t("joinUs.form.placeholder.name")} />
                 </div>
 
                 <div className="input-group">
-                  <label htmlFor="email">E-mail</label>
-                  <input type="email" id="email" name="email" required placeholder="seu@email.com" />
+                  <label htmlFor="email">{t("joinUs.form.label.email")}</label>
+                  <input type="email" id="email" name="email" required placeholder={t("joinUs.form.placeholder.email")} />
                 </div>
 
                 <div className="input-group">
-                  <label htmlFor="message">Qual sua motivação para fazer parte do HUB?</label>
+                  <label htmlFor="message">{t("joinUs.form.label.message")}</label>
                   <textarea 
                     id="message" 
                     name="message" 
                     rows="1" 
                     required 
-                    placeholder="Conte um pouco sobre por que você quer se juntar a nós..."
+                    placeholder={t("joinUs.form.placeholder.message")}
                   ></textarea>
                 </div>
 
                 <button type="submit" className="primary-btn submit-btn">
-                  Enviar <Send size={18} />
+                  {t("joinUs.form.cta") } <Send size={18} />
                 </button>
               </form>
 
