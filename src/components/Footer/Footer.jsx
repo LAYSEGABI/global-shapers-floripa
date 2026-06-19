@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 // Importe sua logo branca
 import LogoBranca from "../../assets/Logos/GSF-branca-fundo-azul.png";
@@ -9,6 +10,8 @@ import LinkedinIcon from "../../assets/Logos/linkedin.png";
 import FaceIcon from "../../assets/Logos/facebook.png";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="container">
@@ -17,20 +20,20 @@ export default function Footer() {
           {/* GRUPO ESQUERDO DE LINKS */}
           <div className="footer-nav-group">
             <div className="footer-col">
-              <h4>O Hub</h4>
+              <h4>{t("footer.hub.title")}</h4>
               <ul>
-                <li><a href="#sobre">Sobre nós</a></li>
-                <li><a href="#comunidade">Nossa Comunidade</a></li>
-                <li><a href="#parceiros">Parceiros</a></li>
+                <li><a href="#sobre">{t("footer.hub.links.about")}</a></li>
+                <li><a href="#comunidade">{t("footer.hub.links.community")}</a></li>
+                <li><a href="#parceiros">{t("footer.hub.links.partners")}</a></li>
               </ul>
             </div>
             <div className="footer-col">
-              <h4>Iniciativas</h4>
+              <h4>{t("footer.initiatives.title")}</h4>
               <ul>
-                <li><a href="#projetos">Ecotrilhas</a></li>
-                <li><a href="#projetos">Foco no Debate</a></li>
-                <li><a href="#projetos">Shaper Lab</a></li>
-                <li><a href="#projetos">Language Exchange</a></li>
+                <li><a href="#projetos">{t("footer.initiatives.ecotrails")}</a></li>
+                <li><a href="#projetos">{t("footer.initiatives.debateFocus")}</a></li>
+                <li><a href="#projetos">{t("footer.initiatives.shaperLab")}</a></li>
+                <li><a href="#projetos">{t("footer.initiatives.languageExchange")}</a></li>
               </ul>
             </div>
           </div>
@@ -38,20 +41,20 @@ export default function Footer() {
           {/* CENTRO: LOGO E REDES SOCIAIS */}
           <div className="footer-center">
             <div className="footer-logo-wrapper">
-              <img src={LogoBranca} alt="Global Shapers Florianópolis" className="footer-logo" />
+              <img src={LogoBranca} alt={t("footer.logo.alt")} className="footer-logo" />
             </div>
             
-            <h2>Global Shapers<br />Florianópolis</h2>
+            <h2>{t("footer.brand.name")}<br />{t("footer.brand.city")}</h2>
             
             <div className="footer-socials">
               <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                <img src={InstaIcon} alt="Instagram" />
+                <img src={InstaIcon} alt={t("footer.socials.instagramAlt")} />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                <img src={LinkedinIcon} alt="LinkedIn" />
+                <img src={LinkedinIcon} alt={t("footer.socials.linkedinAlt")} />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                <img src={FaceIcon} alt="Facebook" />
+                <img src={FaceIcon} alt={t("footer.socials.facebookAlt")} />
               </a>
             </div>
           </div>
@@ -59,19 +62,19 @@ export default function Footer() {
           {/* GRUPO DIREITO DE LINKS */}
           <div className="footer-nav-group right-nav">
             <div className="footer-col">
-              <h4>Eventos</h4>
+              <h4>{t("footer.events.title")}</h4>
               <ul>
-                <li><a href="#eventos">Encontro Regional Sul</a></li>
-                <li><a href="#eventos">Encontro Nacional</a></li>
-                <li><a href="#eventos">Summit 2026/2027</a></li>
+                <li><a href="#eventos">{t("footer.events.regionalSouth")}</a></li>
+                <li><a href="#eventos">{t("footer.events.national")}</a></li>
+                <li><a href="#eventos">{t("footer.events.summit")}</a></li>
               </ul>
             </div>
             <div className="footer-col">
-              <h4>Engaje-se</h4>
+              <h4>{t("footer.engage.title")}</h4>
               <ul>
-                <li><a href="#faca-parte">Faça Parte</a></li>
-                <li><a href="#apoie">Apoie o Hub</a></li>
-                <li><a href="#breshapers">Breshapers</a></li>
+                <li><a href="#faca-parte">{t("footer.engage.join")}</a></li>
+                <li><a href="#apoie">{t("footer.engage.support")}</a></li>
+                <li><a href="#breshapers">{t("footer.engage.breshapers")}</a></li>
               </ul>
             </div>
           </div>
@@ -81,7 +84,7 @@ export default function Footer() {
 
       {/* COPYRIGHT */}
       <div className="footer-bottom">
-        <p>Todos os direitos reservados a Global Shapers Florianópolis @2026</p>
+        <p>{t("footer.copyright")}</p>
       </div>
     </footer>
   );

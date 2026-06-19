@@ -156,7 +156,8 @@
       },
       "cta": "Enviar"
     }
-  },"support": {
+  },
+  "support": {
     "sectionTitle": "Apoie",
     "breshapersAlt": "Banner Breshapers",
     "breshapers": {
@@ -181,5 +182,47 @@
       "bankLabel": "Banco",
       "bankValue": "260 - Nu Pagamentos S.A."
     }
+  },
+  "footer": {
+    "hub": {
+      "title": "O Hub",
+      "links": {
+        "about": "Sobre nós",
+        "community": "Nossa Comunidade",
+        "partners": "Parceiros"
+      }
+    },
+    "initiatives": {
+      "title": "Iniciativas",
+      "ecotrails": "Ecotrilhas",
+      "debateFocus": "Foco no Debate",
+      "shaperLab": "Shaper Lab",
+      "languageExchange": "Language Exchange"
+    },
+    "logo": {
+      "alt": "Global Shapers Florianópolis"
+    },
+    "brand": {
+      "name": "Global Shapers",
+      "city": "Florianópolis"
+    },
+    "socials": {
+      "instagramAlt": "Instagram",
+      "linkedinAlt": "LinkedIn",
+      "facebookAlt": "Facebook"
+    },
+    "events": {
+      "title": "Eventos",
+      "regionalSouth": "Encontro Regional Sul",
+      "national": "Encontro Nacional",
+      "summit": "Summit 2026/2027"
+    },
+    "engage": {
+      "title": "Engaje-se",
+      "join": "Faça Parte",
+      "support": "Apoie o Hub",
+      "breshapers": "Breshapers"
+    },
+    "copyright": "Todos os direitos reservados a Global Shapers Florianópolis @2026"
   }
 }

@@ -184,5 +184,46 @@
       "bankLabel": "Banco",
       "bankValue": "260 - Nu Pagamentos S.A."
     }
+  },"footer": {
+    "hub": {
+      "title": "El Hub",
+      "links": {
+        "about": "Sobre nosotros",
+        "community": "Nuestra Comunidad",
+        "partners": "Socios"
+      }
+    },
+    "initiatives": {
+      "title": "Iniciativas",
+      "ecotrails": "Ecotrilhas",
+      "debateFocus": "Foco en el Debate",
+      "shaperLab": "Shaper Lab",
+      "languageExchange": "Language Exchange"
+    },
+    "logo": {
+      "alt": "Global Shapers Florianópolis"
+    },
+    "brand": {
+      "name": "Global Shapers",
+      "city": "Florianópolis"
+    },
+    "socials": {
+      "instagramAlt": "Instagram",
+      "linkedinAlt": "LinkedIn",
+      "facebookAlt": "Facebook"
+    },
+    "events": {
+      "title": "Eventos",
+      "regionalSouth": "Encuentro Regional Sur",
+      "national": "Encuentro Nacional",
+      "summit": "Summit 2026/2027"
+    },
+    "engage": {
+      "title": "Involúcrate",
+      "join": "Únete",
+      "support": "Apoya el Hub",
+      "breshapers": "Breshapers"
+    },
+    "copyright": "Todos los derechos reservados a Global Shapers Florianópolis @2026"
   }
 }
