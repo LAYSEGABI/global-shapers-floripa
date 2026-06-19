@@ -19,7 +19,7 @@ const projectsList = [
     descriptionKey: "projects.ecotrilhas.description",
     coverImg: EcotrilhasCover,
     logoImg: EcotrilhasLogo,
-    link: "/projetos",
+    link: "/ecotrilhas",
   },
   {
     id: "foco",

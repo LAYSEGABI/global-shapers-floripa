@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/ecotrilhas",
+      "destination": "https://ecotrilhas.vercel.app/"
+    },
+    {
+      "source": "/ecotrilhas/:path*",
+      "destination": "https://ecotrilhas.vercel.app/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
