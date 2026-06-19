@@ -2,15 +2,16 @@
   "redirects": [
     {
       "source": "/ecotrilhas",
-      "destination": "/ecotrilhas/",
+      "destination": "https://ecotrilhas.vercel.app",
+      "permanent": true
+    },
+    {
+      "source": "/ecotrilhas/:path*",
+      "destination": "https://ecotrilhas.vercel.app/:path*",
       "permanent": true
     }
   ],
   "rewrites": [
-    {
-      "source": "/ecotrilhas/:path*",
-      "destination": "https://ecotrilhas.vercel.app/:path*"
-    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
