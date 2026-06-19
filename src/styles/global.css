@@ -198,3 +198,12 @@ img {
     padding: 64px 0;
   }
 }
+
+
+@media (max-width: 430px) {
+
+  .container {
+    width: 100%;
+  }
+
+}
