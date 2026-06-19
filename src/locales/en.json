@@ -1,8 +1,30 @@
 {
-  "hero": {
-    "badge": "Let us know if you are a Shaper visiting the city, click here!",
-    "title": "The power of Youth in action!",
-    "description1": "We are a global network of volunteers working together to debate and solve local, regional, and global challenges, enabling positive impact through dialogue and action.",
-    "btn_saiba_mais": "Learn More"
+  "aboutGlobal": {
+    "title": "Global Shapers Community",
+    "description1": "The Global Shapers Community is an initiative of the World Economic Forum that connects young leaders from around the world to promote positive impact in their communities and on a global scale.",
+    "description2": {
+      "part1": "Present in more than",
+      "strong1": "150 countries",
+      "part2": "the network brings together people working in different contexts and areas of activity,",
+      "part3": "strengthening projects and initiatives focused on social transformation in the cities where each Hub is located."
+    },
+    "description3": {
+      "part1": "In Brazil, the community is present in the main state capitals, with",
+      "strong1": "21 active Hubs",
+      "part2": "that connect young people collaboratively to drive structural changes and contribute",
+      "part3": "to the development of solutions for local and global challenges."
+    },
+    "image": {
+      "alt": "Global Shapers Annual Summit",
+      "tag": "Global Shapers Annual Summit",
+      "year": "2022"
+    },
+    "impact": {
+      "hubsNational": "Hubs operating nationally",
+      "hubsWorldwide": "Hubs active worldwide",
+      "countries": "Countries and territories",
+      "members": "Active members around the world",
+      "peopleImpacted": "People impacted"
+    }
   }
 }

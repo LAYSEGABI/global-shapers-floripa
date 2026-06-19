@@ -2,8 +2,11 @@ import "./AboutGlobal.css";
 import Counter from "../shared/Counter";
 import GSSummit2022 from "../../assets/Images/GS-Annual-Summit-2022.png";
 import { Globe } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 function AboutGlobal() {
+  const { t } = useTranslation();
+
   return (
     <section className="about-global" id="about">
       <div className="container">
@@ -11,37 +14,31 @@ function AboutGlobal() {
           <div className="about-global-text">
             <div className="section-title">
               <Globe size={24} strokeWidth={1.8} />
-              <span>Global Shapers Community</span>
+              <span>{t("aboutGlobal.title")}</span>
             </div>
 
             <p>
-              A Global Shapers Community é uma iniciativa do World Economic
-              Forum que conecta jovens líderes de todo o mundo para promover
-              impacto positivo em suas comunidades e em escala global.
+              {t("aboutGlobal.description1")}
             </p>
 
             <p>
-              Presente em mais de <strong>150 países</strong>, a rede reúne
-              pessoas que atuam em diferentes contextos e áreas de atuação,
-              fortalecendo projetos e iniciativas voltados à transformação
-              social nas cidades onde cada Hub está inserido.
+              {t("aboutGlobal.description2.part1")} <strong>{t("aboutGlobal.description2.strong1")}</strong>, {t("aboutGlobal.description2.part2")}
+              {t("aboutGlobal.description2.part3")}
             </p>
 
             <p>
-              No Brasil, a comunidade está presente nas principais capitais do
-              país, com
-              <strong> 21 Hubs ativos</strong> que conectam jovens de maneira
-              colaborativa para impulsionar mudanças estruturais e contribuir
-              para o desenvolvimento de soluções para desafios locais e globais.
+              {t("aboutGlobal.description3.part1")}
+              <strong>{t("aboutGlobal.description3.strong1")}</strong> {t("aboutGlobal.description3.part2")}
+              {t("aboutGlobal.description3.part3")}
             </p>
           </div>
 
           <div className="about-global-image">
-            <img src={GSSummit2022} alt="Global Shapers Annual Summit" />
+            <img src={GSSummit2022} alt={t("aboutGlobal.image.alt")} />
 
-            <div className="image-tag">Global Shapers Annual Summit</div>
+            <div className="image-tag">{t("aboutGlobal.image.tag")}</div>
 
-            <div className="image-year">2022</div>
+            <div className="image-year">{t("aboutGlobal.image.year")}</div>
           </div>
         </div>
 
@@ -50,35 +47,35 @@ function AboutGlobal() {
             <h3>
               <Counter end={21} />
             </h3>
-            <p>Hubs atuando nacionalmente</p>
+            <p>{t("aboutGlobal.impact.hubsNational")}</p>
           </div>
 
           <div className="impact-item">
             <h3>
               <Counter end={500} suffix="+" />
             </h3>
-            <p>Hubs ativos mundialmente</p>
+            <p>{t("aboutGlobal.impact.hubsWorldwide")}</p>
           </div>
 
           <div className="impact-item">
             <h3>
               <Counter end={150} suffix="+" />
             </h3>
-            <p>Países e territórios</p>
+            <p>{t("aboutGlobal.impact.countries")}</p>
           </div>
 
           <div className="impact-item">
             <h3>
               <Counter end={10000} suffix="+" />
             </h3>
-            <p>Membros ativos em todo mundo</p>
+            <p>{t("aboutGlobal.impact.members")}</p>
           </div>
 
           <div className="impact-item">
             <h3>
               <Counter end={20} suffix="M+" />
             </h3>
-            <p>Pessoas impactadas</p>
+            <p>{t("aboutGlobal.impact.peopleImpacted")}</p>
           </div>
         </div>
       </div>

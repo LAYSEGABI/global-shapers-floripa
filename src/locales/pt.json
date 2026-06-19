@@ -1,8 +1,30 @@
 {
-  "hero": {
-    "badge": "Nos deixe saber caso você seja um Shaper visitando a cidade, clique aqui!",
-    "title": "O poder da Juventude em ação!",
-    "description1": "Somos uma rede global de pessoas voluntárias trabalhando em conjunto para debater e solucionar desafios locais, regionais e globais, viabilizando o impacto positivo por meio do diálogo e da ação.",
-    "btn_saiba_mais": "Saiba Mais"
+  "aboutGlobal": {
+    "title": "Global Shapers Community",
+    "description1": "A Global Shapers Community é uma iniciativa do World Economic Forum que conecta jovens líderes de todo o mundo para promover impacto positivo em suas comunidades e em escala global.",
+    "description2": {
+      "part1": "Presente em mais de",
+      "strong1": "150 países",
+      "part2": "a rede reúne pessoas que atuam em diferentes contextos e áreas de atuação,",
+      "part3": "fortalecendo projetos e iniciativas voltados à transformação social nas cidades onde cada Hub está inserido."
+    },
+    "description3": {
+      "part1": "No Brasil, a comunidade está presente nas principais capitais do país, com",
+      "strong1": "21 Hubs ativos",
+      "part2": "que conectam jovens de maneira colaborativa para impulsionar mudanças estruturais e contribuir",
+      "part3": "para o desenvolvimento de soluções para desafios locais e globais."
+    },
+    "image": {
+      "alt": "Global Shapers Annual Summit",
+      "tag": "Global Shapers Annual Summit",
+      "year": "2022"
+    },
+    "impact": {
+      "hubsNational": "Hubs atuando nacionalmente",
+      "hubsWorldwide": "Hubs ativos mundialmente",
+      "countries": "Países e territórios",
+      "members": "Membros ativos em todo mundo",
+      "peopleImpacted": "Pessoas impactadas"
+    }
   }
 }
