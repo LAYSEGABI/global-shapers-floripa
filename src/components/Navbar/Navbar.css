@@ -91,7 +91,7 @@
   }
 
   .navbar-logo img {
-    height: 55px;
+    height: 70px;
   }
 
   .navbar-cta {
@@ -145,7 +145,6 @@
     border-radius: 10px;
   }
 }
-
 /* --- ESTILOS DO SELETOR DE IDIOMAS --- */
 .navbar-right-actions {
   display: flex;
@@ -156,7 +155,7 @@
 .language-switcher {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px; /* Aumentei um pouquinho o gap pra caber a borda */
 }
 
 .language-switcher button {
@@ -164,7 +163,6 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  transition: transform 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,44 +170,41 @@
 }
 
 .language-switcher button img {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%; /* Deixa a bandeira redondinha */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   object-fit: cover;
-  border: 2px solid transparent;
-  transition: border-color 0.2s ease;
+  transition: all 0.3s ease;
+  
+  /* Trocamos o 'border' por um 'box-shadow' transparente */
+  box-shadow: 0 0 0 2px transparent; 
+  
+  opacity: 0.6; 
+  filter: grayscale(40%); 
 }
 
-.language-switcher button:hover {
-  transform: scale(1.1);
-}
-
+/* Efeito ao passar o mouse */
 .language-switcher button:hover img {
-  border-color: var(--primary); /* Cria uma bordinha azul ao passar o mouse */
+  transform: scale(1.1);
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* EFEITO DO IDIOMA SELECIONADO */
+.language-switcher button.active-lang img {
+  opacity: 1; 
+  filter: grayscale(0%);
+  transform: scale(1.1); 
+  
+  /* O primeiro valor do box-shadow cria a borda azul sem o gap branco, 
+     e o segundo valor mantém a sombrinha de destaque */
+  box-shadow: 0 0 0 2px var(--primary), 0 4px 10px rgba(0, 0, 0, 0.15);
+  
+  /* Preenche qualquer sub-pixel branco que sobrar na curva */
+  background-color: var(--primary);
 }
 
 /* Esconde as bandeiras de dentro do menu hambúrguer no PC */
 .mobile-langs {
   display: none;
-}
-
-/* --- RESPONSIVIDADE PARA O CELULAR --- */
-@media (max-width: 992px) {
-  /* Esconde as bandeiras do topo no celular */
-  .desktop-langs {
-    display: none;
-  }
-
-  /* Mostra as bandeiras dentro do menu aberto no celular */
-  .mobile-langs {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 15px;
-  }
-
-  .mobile-langs button img {
-    width: 32px; /* Bandeiras um pouco maiores para facilitar o toque no celular */
-    height: 32px;
-  }
 }

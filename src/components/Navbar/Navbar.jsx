@@ -43,13 +43,25 @@ function Navbar() {
 
           {/* Botões de Idioma aparecem dentro do menu no celular */}
           <div className="language-switcher mobile-langs">
-            <button onClick={() => changeLanguage('pt')} title="Português">
+            <button 
+              onClick={() => changeLanguage('pt')} 
+              title="Português"
+              className={i18n.language?.startsWith('pt') ? 'active-lang' : ''}
+            >
               <img src={FlagPT} alt="PT" />
             </button>
-            <button onClick={() => changeLanguage('en')} title="English">
+            <button 
+              onClick={() => changeLanguage('en')} 
+              title="English"
+              className={i18n.language?.startsWith('en') ? 'active-lang' : ''}
+            >
               <img src={FlagEN} alt="EN" />
             </button>
-            <button onClick={() => changeLanguage('es')} title="Español">
+            <button 
+              onClick={() => changeLanguage('es')} 
+              title="Español"
+              className={i18n.language?.startsWith('es') ? 'active-lang' : ''}
+            >
               <img src={FlagES} alt="ES" />
             </button>
           </div>
@@ -58,13 +70,25 @@ function Navbar() {
         {/* Grupo da direita (Botões de Idioma + Faça Parte no Desktop) */}
         <div className="navbar-right-actions">
           <div className="language-switcher desktop-langs">
-            <button onClick={() => changeLanguage('pt')} title="Português">
+            <button 
+              onClick={() => changeLanguage('pt')} 
+              title="Português"
+              className={i18n.language?.startsWith('pt') ? 'active-lang' : ''}
+            >
               <img src={FlagPT} alt="PT" />
             </button>
-            <button onClick={() => changeLanguage('en')} title="English">
+            <button 
+              onClick={() => changeLanguage('en')} 
+              title="English"
+              className={i18n.language?.startsWith('en') ? 'active-lang' : ''}
+            >
               <img src={FlagEN} alt="EN" />
             </button>
-            <button onClick={() => changeLanguage('es')} title="Español">
+            <button 
+              onClick={() => changeLanguage('es')} 
+              title="Español"
+              className={i18n.language?.startsWith('es') ? 'active-lang' : ''}
+            >
               <img src={FlagES} alt="ES" />
             </button>
           </div>
