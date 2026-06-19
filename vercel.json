@@ -1,9 +1,12 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/ecotrilhas",
-      "destination": "https://ecotrilhas.vercel.app/"
-    },
+      "destination": "/ecotrilhas/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
     {
       "source": "/ecotrilhas/:path*",
       "destination": "https://ecotrilhas.vercel.app/:path*"
