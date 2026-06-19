@@ -88,6 +88,8 @@
 @media (max-width: 880px) {
   .navbar {
     padding: 14px 0;
+  background: rgba(255, 255, 255, 0.979);
+
   }
 
   .navbar-logo img {
