@@ -39,6 +39,11 @@
       "peopleImpacted": "People impacted"
     }
   },
+  "languageExchange": {
+"title": "Language Exchange",
+"description": "The Language Exchange project is an initiative created to strengthen global connections within the Global Shapers Community through the exchange of languages and cultural experiences.",
+"cta": "Discover now"
+},
   "events": {
     "title": "Events",
     "southMeeting": {

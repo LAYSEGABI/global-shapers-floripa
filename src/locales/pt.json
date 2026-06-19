@@ -1,5 +1,5 @@
 {
-   "navbar": {
+  "navbar": {
     "links": {
       "about": "Sobre nós",
       "community": "Comunidade",
@@ -11,7 +11,7 @@
       "join": "Faça Parte"
     }
   },
-    "aboutGlobal": {
+  "aboutGlobal": {
     "title": "Global Shapers Community",
     "description1": "A Global Shapers Community é uma iniciativa do World Economic Forum que conecta jovens líderes de todo o mundo para promover impacto positivo em suas comunidades e em escala global.",
     "description2": {
@@ -38,6 +38,11 @@
       "members": "Membros ativos em todo mundo",
       "peopleImpacted": "Pessoas impactadas"
     }
+  },
+  "languageExchange": {
+    "title": "Language Exchange",
+    "description": "O projeto Language Exchange é uma iniciativa criada para fortalecer as conexões globais dentro da Comunidade Global Shapers por meio da troca de idiomas e experiências culturais.",
+    "cta": "Conheça agora"
   },
   "events": {
     "title": "Eventos",

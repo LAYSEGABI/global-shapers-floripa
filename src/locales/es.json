@@ -40,6 +40,12 @@
       "peopleImpacted": "Personas impactadas"
     }
   },
+
+  "languageExchange": {
+"title": "Intercambio de Idiomas",
+"description": "El proyecto Language Exchange es una iniciativa creada para fortalecer las conexiones globales dentro de la Comunidad Global Shapers mediante el intercambio de idiomas y experiencias culturales.",
+"cta": "Conoce ahora"
+},
   "events": {
     "title": "Eventos",
     "southMeeting": {

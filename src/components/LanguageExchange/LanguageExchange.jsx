@@ -1,5 +1,6 @@
 import "./LanguageExchange.css";
 import { MousePointerClick } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 import BackBanner from "../../assets/Images/Back-LE.jpg";
 
@@ -14,6 +15,8 @@ import ReinoUnido from "../../assets/Flags/reino-unido.png";
 import Espanha from "../../assets/Flags/espanha.png";
 
 export default function LanguageExchange() {
+  const { t } = useTranslation();
+
   return (
     <section className="language-exchange">
       <div className="container">
@@ -26,18 +29,12 @@ export default function LanguageExchange() {
         >
           <div className="le-content text-center">
             
-            <h2 className="le-title">
-              Language Exchange
-            </h2>
+            <h2 className="le-title">{t('languageExchange.title')}</h2>
 
-            <p className="le-description">
-              O projeto Language Exchange é uma iniciativa criada para fortalecer as conexões 
-              globais dentro da Comunidade Global Shapers por meio da troca de idiomas e 
-              experiências culturais.
-            </p>
+            <p className="le-description">{t('languageExchange.description')}</p>
 
             <a href="#conheca-agora" className="le-btn">
-              Conheça agora
+              {t('languageExchange.cta')}
               <MousePointerClick size={18} strokeWidth={2} />
             </a>
 
