@@ -119,6 +119,10 @@
 
     text-align: center;
   }
+
+  .about-floripa-top {
+    gap: 20px;
+  }
   .about-floripa-bottom {
     gap: 20px;
   }

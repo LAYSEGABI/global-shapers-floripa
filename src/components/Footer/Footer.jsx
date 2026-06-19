@@ -22,18 +22,19 @@ export default function Footer() {
             <div className="footer-col">
               <h4>{t("footer.hub.title")}</h4>
               <ul>
-                <li><a href="#sobre">{t("footer.hub.links.about")}</a></li>
-                <li><a href="#comunidade">{t("footer.hub.links.community")}</a></li>
-                <li><a href="#parceiros">{t("footer.hub.links.partners")}</a></li>
+                <li><a href="#about">{t("footer.hub.links.about")}</a></li>
+                <li><a href="#community">{t("footer.hub.links.community")}</a></li>
+                <li><a href="#events">{t("footer.hub.links.events")}</a></li>
               </ul>
             </div>
             <div className="footer-col">
               <h4>{t("footer.initiatives.title")}</h4>
               <ul>
-                <li><a href="#projetos">{t("footer.initiatives.ecotrails")}</a></li>
-                <li><a href="#projetos">{t("footer.initiatives.debateFocus")}</a></li>
-                <li><a href="#projetos">{t("footer.initiatives.shaperLab")}</a></li>
-                <li><a href="#projetos">{t("footer.initiatives.languageExchange")}</a></li>
+                <li><a href="https://ecotrilhas.globalshapersflorianopolis.com.br/">{t("footer.initiatives.ecotrails")}</a></li>
+                <li><a href="#projects">{t("footer.initiatives.debateFocus")}</a></li>
+                <li><a href="#projects">{t("footer.initiatives.shaperLab")}</a></li>
+                <li><a href="https://languageexchange.globalshapersflorianopolis.com.br/" target="_blank" 
+                  rel="noreferrer">{t("footer.initiatives.languageExchange")}</a></li>
               </ul>
             </div>
           </div>
@@ -64,17 +65,17 @@ export default function Footer() {
             <div className="footer-col">
               <h4>{t("footer.events.title")}</h4>
               <ul>
-                <li><a href="#eventos">{t("footer.events.regionalSouth")}</a></li>
-                <li><a href="#eventos">{t("footer.events.national")}</a></li>
-                <li><a href="#eventos">{t("footer.events.summit")}</a></li>
+                <li><a href="#events">{t("footer.events.regionalSouth")}</a></li>
+                <li><a href="#events">{t("footer.events.national")}</a></li>
+                <li><a href="#events">{t("footer.events.summit")}</a></li>
               </ul>
             </div>
             <div className="footer-col">
               <h4>{t("footer.engage.title")}</h4>
               <ul>
-                <li><a href="#faca-parte">{t("footer.engage.join")}</a></li>
-                <li><a href="#apoie">{t("footer.engage.support")}</a></li>
-                <li><a href="#breshapers">{t("footer.engage.breshapers")}</a></li>
+                <li><a href="#join-us">{t("footer.engage.join")}</a></li>
+                <li><a href="#support">{t("footer.engage.support")}</a></li>
+                <li><a href="https://www.instagram.com/breshapersfloripa">{t("footer.engage.breshapers")}</a></li>
               </ul>
             </div>
           </div>
