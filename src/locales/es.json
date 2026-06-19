@@ -24,8 +24,8 @@
       "cta": "Conoce ahora"
     }
   },
-  
-    "aboutGlobal": {
+
+  "aboutGlobal": {
     "title": "Comunidad Global Shapers",
     "description1": "La Comunidad Global Shapers es una iniciativa del Foro Económico Mundial que conecta a jóvenes líderes de todo el mundo para promover un impacto positivo en sus comunidades y a escala global.",
     "description2": {
@@ -67,12 +67,19 @@
     "focus3": "Además, actuamos como una red de colaboración que moviliza talentos, comparte conocimiento e impulsa iniciativas con potencial de generar impacto social, ambiental y económico.",
     "focusBadge": "Encuentro Regional Sur 2026"
   },
+  "community": {
+    "title": "Nuestra Comunidad",
+    "curators": "Curadores 26/27",
+    "members": "Miembros",
+    "photoAlt": "Foto de {{name}}",
+    "linkedinAlt": "LinkedIn"
+  },
 
   "languageExchange": {
-"title": "Intercambio de Idiomas",
-"description": "El proyecto Language Exchange es una iniciativa creada para fortalecer las conexiones globales dentro de la Comunidad Global Shapers mediante el intercambio de idiomas y experiencias culturales.",
-"cta": "Conoce ahora"
-},
+    "title": "Intercambio de Idiomas",
+    "description": "El proyecto Language Exchange es una iniciativa creada para fortalecer las conexiones globales dentro de la Comunidad Global Shapers mediante el intercambio de idiomas y experiencias culturales.",
+    "cta": "Conoce ahora"
+  },
   "events": {
     "title": "Eventos",
     "southMeeting": {

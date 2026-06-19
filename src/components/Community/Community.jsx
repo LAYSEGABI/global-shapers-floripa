@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Community.css";
 import { UsersRound } from "lucide-react";
 import { curators } from "../../data/curators";
@@ -6,6 +7,8 @@ import { members } from "../../data/members";
 import Linkedin from "../../assets/Logos/linkedin.png";
 
 export default function Community() {
+  const { t } = useTranslation();
+
   // Variáveis para controlar o arraste do mouse
   const sliderRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -41,23 +44,23 @@ export default function Community() {
         
         <div className="section-title">
           <UsersRound size={24} />
-          <span>Nossa Comunidade</span>
+          <span>{t("community.title")}</span>
         </div>
 
-        <h3 className="community-subtitle">Curadoria 26/27</h3>
+        <h3 className="community-subtitle">{t("community.curators")}</h3>
 
         <div className="curators-grid">
           {curators.map((person) => (
             <div className="person-card" key={person.name}>
               <div className="avatar-wrapper">
-                <img src={person.image} alt={`Foto de ${person.name}`} />
+                <img src={person.image} alt={t("community.photoAlt", { name: person.name })} />
                 <a 
                   href={person.linkedin} 
                   className="linkedin-badge" 
                   target="_blank" 
                   rel="noreferrer"
                 >
-                  <img src={Linkedin} alt="LinkedIn" />
+                  <img src={Linkedin} alt={t("community.linkedinAlt")} />
                 </a>
               </div>
               <h4>{person.name}</h4>
@@ -66,7 +69,7 @@ export default function Community() {
           ))}
         </div>
 
-        <h3 className="community-subtitle">Membros</h3>
+        <h3 className="community-subtitle">{t("community.members")}</h3>
 
         {/* Adicionamos a referência e os eventos de mouse aqui */}
         <div 
@@ -82,14 +85,14 @@ export default function Community() {
             {members.map((member, index) => (
               <div className="person-card member-card" key={`${member.name}-${index}`}>
                 <div className="avatar-wrapper">
-                  <img src={member.image} alt={`Foto de ${member.name}`} />
+                  <img src={member.image} alt={t("community.photoAlt", { name: member.name })} />
                   <a 
                     href={member.linkedin} 
                     className="linkedin-badge" 
                     target="_blank" 
                     rel="noreferrer"
                   >
-                    <img src={Linkedin} alt="LinkedIn" />
+                    <img src={Linkedin} alt={t("community.linkedinAlt")} />
                   </a>
                 </div>
                 <h4 className="member-name">{member.name}</h4>

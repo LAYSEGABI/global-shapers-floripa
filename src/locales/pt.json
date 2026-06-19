@@ -66,6 +66,13 @@
     "focus3": "Além disso, atuamos como uma rede de colaboração que mobiliza talentos, compartilha conhecimento e impulsiona iniciativas com potencial de gerar impacto social, ambiental e econômico.",
     "focusBadge": "Encontro Regional Sul 2026"
   },
+  "community": {
+    "title": "Nossa Comunidade",
+    "curators": "Curadoria 26/27",
+    "members": "Membros",
+    "photoAlt": "Foto de {{name}}",
+    "linkedinAlt": "LinkedIn"
+  },
   "languageExchange": {
     "title": "Language Exchange",
     "description": "O projeto Language Exchange é uma iniciativa criada para fortalecer as conexões globais dentro da Comunidade Global Shapers por meio da troca de idiomas e experiências culturais.",

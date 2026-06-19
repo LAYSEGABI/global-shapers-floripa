@@ -66,6 +66,13 @@
     "focus3": "We also act as a collaboration network that mobilizes talent, shares knowledge, and drives initiatives with the potential to generate social, environmental, and economic impact.",
     "focusBadge": "South Regional Meeting 2026"
   },
+  "community": {
+    "title": "Our Community",
+    "curators": "Curators 26/27",
+    "members": "Members",
+    "photoAlt": "{{name}} photo",
+    "linkedinAlt": "LinkedIn"
+  },
   "languageExchange": {
 "title": "Language Exchange",
 "description": "The Language Exchange project is an initiative created to strengthen global connections within the Global Shapers Community through the exchange of languages and cultural experiences.",
