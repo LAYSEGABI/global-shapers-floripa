@@ -1,5 +1,6 @@
 import "./Projects.css";
 import { Folder, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // 1. Importando as fotos de capa da pasta Images
 import EcotrilhasCover from "../../assets/Images/ecotrilhas.jpg";
@@ -13,27 +14,27 @@ import ShaperLogo from "../../assets/Logos/logo-shapers-lab.jpg";
 const projectsList = [
   {
     id: "ecotrilhas",
-    title: "Ecotrilhas",
+    titleKey: "projects.ecotrilhas.title",
     themeClass: "card-ecotrilhas",
-    description: "O projeto Ecotrilhas é uma iniciativa para engajar jovens e adultos da sociedade civil, promovendo a conscientização sobre as questões climáticas, culturais e territoriais de Florianópolis por meio de vivências práticas em contato direto com a natureza e a história local.",
+    descriptionKey: "projects.ecotrilhas.description",
     coverImg: EcotrilhasCover,
-    logoImg: EcotrilhasLogo, 
+    logoImg: EcotrilhasLogo,
     link: "/projetos",
   },
   {
     id: "foco",
-    title: "Foco no Debate",
+    titleKey: "projects.foco.title",
     themeClass: "card-foco",
-    description: "O projeto Foco no Debate é uma iniciativa voltada para aproximar a população da política real, promovendo o entendimento sobre o funcionamento das instituições, os caminhos para a participação cidadã e os mecanismos de cobrança social.",
+    descriptionKey: "projects.foco.description",
     coverImg: FocoCover,
     logoImg: FocoLogo,
     link: "/projetos",
   },
   {
     id: "shaper",
-    title: "Shaper Lab",
+    titleKey: "projects.shaper.title",
     themeClass: "card-shaper",
-    description: "O ShaperLab é uma iniciativa voltada ao desenvolvimento contínuo de seus membros, promovendo experiências de aprendizagem alinhadas às competências mais relevantes para o futuro do trabalho e para a geração de impacto social.",
+    descriptionKey: "projects.shaper.description",
     coverImg: ShaperCover,
     logoImg: ShaperLogo,
     link: "/projetos",
@@ -41,6 +42,8 @@ const projectsList = [
 ];
 
 export default function Projects() {
+  const { t } = useTranslation();
+
   return (
     <section className="projects-section" id="projects">
       <div className="container text-center">
@@ -48,7 +51,7 @@ export default function Projects() {
         {/* Título da Seção usando sua classe global */}
         <div className="section-title">
           <Folder size={24} strokeWidth={1.5} />
-          <span>Projetos</span>
+          <span>{t("projects.sectionTitle")}</span>
         </div>
 
         {/* Usando o grid-3 global para alinhar os 3 cards */}
@@ -59,30 +62,30 @@ export default function Projects() {
               <div className="project-image-wrapper">
                 {/* Tab com o nome do projeto */}
                 <div className="project-tab">
-                  {project.title}
+                  {t(project.titleKey)}
                 </div>
                 
                 {/* Foto de capa */}
                 <img 
                   src={project.coverImg} 
-                  alt={`Capa do projeto ${project.title}`} 
+                  alt={t("projects.projectCoverAlt", { project: t(project.titleKey) })} 
                   className="project-cover"
                 />
                 
                 {/* Logo flutuante */}
                 <div className="project-logo">
-                  <img src={project.logoImg} alt={`Logo ${project.title}`} />
+                  <img src={project.logoImg} alt={t("projects.projectLogoAlt", { project: t(project.titleKey) })} />
                 </div>
               </div>
 
               <p className="project-desc">
-                {project.description}
+                {t(project.descriptionKey)}
               </p>
 
               {/* Botão Saiba Mais alinhado à esquerda */}
               <div className="project-link-wrapper">
                 <a href={project.link} className="project-link">
-                  Saiba Mais <ArrowRight size={18} />
+                  {t("projects.learnMore")} <ArrowRight size={18} />
                 </a>
               </div>
               
@@ -93,7 +96,7 @@ export default function Projects() {
         {/* Botão final usando a sua classe global primária */}
         <div className="projects-footer">
           <a href="/projetos" className="primary-btn">
-            Veja mais projetos
+            {t("projects.viewMore")}
           </a>
         </div>
 

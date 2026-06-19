@@ -73,6 +73,25 @@
     "photoAlt": "{{name}} photo",
     "linkedinAlt": "LinkedIn"
   },
+  "projects": {
+    "sectionTitle": "Projects",
+    "projectCoverAlt": "{{project}} project cover",
+    "projectLogoAlt": "{{project}} logo",
+    "learnMore": "Learn More",
+    "viewMore": "See more projects",
+    "ecotrilhas": {
+      "title": "Ecotrilhas",
+      "description": "The Ecotrilhas project is an initiative to engage young people and adults from civil society, raising awareness about climate, cultural, and territorial issues in Florianópolis through hands-on experiences in direct contact with nature and local history."
+    },
+    "foco": {
+      "title": "Foco no Debate",
+      "description": "The Foco no Debate project is an initiative aimed at bringing people closer to real politics, promoting understanding of how institutions work, the paths to civic participation, and mechanisms of social accountability."
+    },
+    "shaper": {
+      "title": "Shaper Lab",
+      "description": "ShaperLab is an initiative focused on the continuous development of its members, promoting learning experiences aligned with the most relevant skills for the future of work and for generating social impact."
+    }
+  },
   "languageExchange": {
 "title": "Language Exchange",
 "description": "The Language Exchange project is an initiative created to strengthen global connections within the Global Shapers Community through the exchange of languages and cultural experiences.",

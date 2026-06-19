@@ -73,6 +73,25 @@
     "photoAlt": "Foto de {{name}}",
     "linkedinAlt": "LinkedIn"
   },
+  "projects": {
+    "sectionTitle": "Projetos",
+    "projectCoverAlt": "Capa do projeto {{project}}",
+    "projectLogoAlt": "Logo {{project}}",
+    "learnMore": "Saiba Mais",
+    "viewMore": "Veja mais projetos",
+    "ecotrilhas": {
+      "title": "Ecotrilhas",
+      "description": "O projeto Ecotrilhas é uma iniciativa para engajar jovens e adultos da sociedade civil, promovendo a conscientização sobre as questões climáticas, culturais e territoriais de Florianópolis por meio de vivências práticas em contato direto com a natureza e a história local."
+    },
+    "foco": {
+      "title": "Foco no Debate",
+      "description": "O projeto Foco no Debate é uma iniciativa voltada para aproximar a população da política real, promovendo o entendimento sobre o funcionamento das instituições, os caminhos para a participação cidadã e os mecanismos de cobrança social."
+    },
+    "shaper": {
+      "title": "Shaper Lab",
+      "description": "O ShaperLab é uma iniciativa voltada ao desenvolvimento contínuo de seus membros, promovendo experiências de aprendizagem alinhadas às competências mais relevantes para o futuro do trabalho e para a geração de impacto social."
+    }
+  },
   "languageExchange": {
     "title": "Language Exchange",
     "description": "O projeto Language Exchange é uma iniciativa criada para fortalecer as conexões globais dentro da Comunidade Global Shapers por meio da troca de idiomas e experiências culturais.",

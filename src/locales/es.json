@@ -74,6 +74,25 @@
     "photoAlt": "Foto de {{name}}",
     "linkedinAlt": "LinkedIn"
   },
+  "projects": {
+    "sectionTitle": "Proyectos",
+    "projectCoverAlt": "Portada del proyecto {{project}}",
+    "projectLogoAlt": "Logotipo {{project}}",
+    "learnMore": "Saber más",
+    "viewMore": "Ver más proyectos",
+    "ecotrilhas": {
+      "title": "Ecotrilhas",
+      "description": "El proyecto Ecotrilhas es una iniciativa para involucrar a jóvenes y adultos de la sociedad civil, promoviendo la concienciación sobre cuestiones climáticas, culturales y territoriales de Florianópolis a través de experiencias prácticas en contacto directo con la naturaleza y la historia local."
+    },
+    "foco": {
+      "title": "Foco no Debate",
+      "description": "El proyecto Foco no Debate está orientado a acercar a la población a la política real, fomentando la comprensión sobre el funcionamiento de las instituciones, los caminos para la participación ciudadana y los mecanismos de rendición de cuentas social."
+    },
+    "shaper": {
+      "title": "Shaper Lab",
+      "description": "ShaperLab es una iniciativa enfocada en el desarrollo continuo de sus miembros, promoviendo experiencias de aprendizaje alineadas con las competencias más relevantes para el futuro del trabajo y para la generación de impacto social."
+    }
+  },
 
   "languageExchange": {
     "title": "Intercambio de Idiomas",
