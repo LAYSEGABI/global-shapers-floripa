@@ -10,7 +10,7 @@
   background:
     linear-gradient(rgba(0, 0, 0, 0.164),
       rgba(0, 0, 0, 0.144)),
-    url("../../assets/Images/Back-banner.png");
+    url("../../assets/Images/Back-banner.avif");
   background-size: cover;
   background-position: center;
 }
