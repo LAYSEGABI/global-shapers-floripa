@@ -3,7 +3,7 @@ import { HeartHandshake } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 
-import ActionImg1 from "../../assets/Images/CommunityActions/actionImg3.jpeg";   // Foto na escola (vertical/retrato)
+import ActionImg1 from "../../assets/Images/CommunityActions/actionImg3.jpg";   // Foto na escola (vertical/retrato)
 import ActionImg2 from "../../assets/Images/CommunityActions/actionsImg1.png";    // Foto do lixo na praia
 import ActionImg3 from "../../assets/Images/CommunityActions/actionImg2.jpeg";  // Foto do plantio na natureza
 
