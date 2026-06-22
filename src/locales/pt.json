@@ -5,7 +5,8 @@
       "community": "Comunidade",
       "projects": "Projetos",
       "events": "Eventos",
-      "support": "Apoie"
+      "support": "Apoie",
+      "actions": "Ações Comunitárias"
     },
     "cta": {
       "join": "Faça Parte"
@@ -35,7 +36,7 @@
     },
     "description3": {
       "part1": "No Brasil, a comunidade está presente nas principais capitais do país, com",
-      "strong1": "21 Hubs ativos",
+      "strong1": " 21 Hubs ativos",
       "part2": "que conectam jovens de maneira colaborativa para impulsionar mudanças estruturais e contribuir",
       "part3": "para o desenvolvimento de soluções para desafios locais e globais."
     },
@@ -100,8 +101,14 @@
   "events": {
     "title": "Eventos",
     "southMeeting": {
-      "title": "Encontro regional sul",
-      "description": "A Imersão Sul nasceu como um espaço para transformar conexão em ação: aproximar pessoas, fortalecer vínculos entre hubs e reconectar com o território que nos atravessa. Em Florianópolis, vivemos uma experiência que foi além de um encontro: foi sobre construir juntos. A Ilha foi o ponto de partida. O impacto, a gente leva adiante."
+      "title": "Imersão Sul",
+      "description": "A Imersão Sul nasceu como um espaço para transformar conexão em ação: aproximar pessoas, fortalecer vínculos entre Hubs e reconectar com o território que nos atravessa. Em Florianópolis, vivemos uma experiência que foi além de um encontro: foi sobre construir juntos. Entre trocas, aprendizados e conexão com a natureza, os participantes plantaram 50 mudas nativas e removeram mais de 16 mil plantas invasoras, contribuindo diretamente para a recuperação ambiental da região. A trilha foi o ponto de partida. O impacto, a gente leva adiante.",
+      "linkText": "Acesse o site do encontro"
+    },
+    "shapeLatam": {
+      "title": "Shape LATAM",
+      "description1": "Shape LATAM é o principal encontro regional da Global Shapers Community na América Latina, reunindo jovens líderes de diversos países para uma experiência de aprendizado, colaboração e desenvolvimento. A edição de 2025, realizada em Buenos Aires, Argentina, reuniu mais de 250 participantes de 28 países sob o tema \"Resiliência, Inovação e Paixão\".",
+      "description2": "O evento fortalece conexões entre Hubs, impulsiona a troca de experiências e inspira a construção de soluções colaborativas para os desafios da região. Após o sucesso da última edição, a comunidade já se prepara para o próximo SHAPE LATAM, previsto para 2027, que seguirá fortalecendo a liderança jovem e ampliando o impacto positivo dos Shapers em toda a América Latina."
     },
     "summit": {
       "title": "Summit 2026/2027",
@@ -183,6 +190,13 @@
       "bankValue": "260 - Nu Pagamentos S.A."
     }
   },
+
+  "communityActions": {
+    "title": "Ações comunitárias",
+    "description1": "O Global Shapers Hub Florianópolis realiza ações comunitárias pontuais, com foco em impacto social e ambiental. Essas iniciativas incluem atividades como mutirões de plantio de mudas nativas, recolha de lixo nas praias, remoção de espécies invasoras e outras mobilizações voltadas à regeneração ambiental e ao fortalecimento da comunidade local.",
+    "description2": "As ações são abertas à participação da comunidade e acontecem de forma esporádica, sendo sempre divulgadas previamente com data, local e orientações de participação. Dessa forma, o Hub busca ampliar o engajamento cidadão, conectando voluntários e parceiros em experiências práticas de transformação no território."
+  },
+
   "footer": {
     "hub": {
       "title": "O Hub",

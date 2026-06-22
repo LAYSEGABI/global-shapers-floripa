@@ -7,6 +7,7 @@ import Community from "../../components/Community/Community";
 import Projects from "../../components/Projects/Projects";
 import Events from "../../components/Events/Events";
 import Support from "../../components/Support/Support";
+import CommunityActions from "../../components/CommunityActions/CommunityActions";
 import JoinUs from "../../components/JoinUs/JoinUs";
 import Footer from "../../components/Footer/Footer";
 
@@ -24,6 +25,7 @@ function Home() {
       <Events />
       <JoinUs />
       <Support />
+      <CommunityActions />
       
       <Footer />
     </main>

@@ -16,6 +16,17 @@
   width: 100%;
 }
 
+/* O texto ocupa o espaço restante de forma fluida */
+.join-info {
+  flex: 1;
+}
+
+/* Fixa o tamanho do formulário para não ser espremido em telas intermediárias */
+.join-form-wrapper {
+  flex: 0 0 420px; /* Impede de encolher ou crescer além de 420px */
+  max-width: 100%;
+}
+
 /* Ajuste da pílula global para temas escuros */
 .dark-theme-title {
   border-color: rgba(255, 255, 255, 0.4) !important;
@@ -76,10 +87,8 @@
 
 /* --- COLUNA DIREITA (Formulário Glass) --- */
 .form-card {
-  padding: 20px 10px;
-  max-width: 500px;
+  padding: 20px 20px;
   width: 100%;
-  /* Removido o width: 500px fixo daqui para permitir a responsividade */
 }
 
 .form-header {
@@ -104,7 +113,7 @@
   line-height: 1.5;
 }
 
-/* Estilos dos Inputs */
+/* Estilos dos Inputs e Select */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -124,7 +133,8 @@
 }
 
 .input-group input,
-.input-group textarea {
+.input-group textarea,
+.input-group select {
   width: 100%;
   padding: 14px 16px;
   border-radius: 10px;
@@ -136,6 +146,13 @@
   transition: all 0.3s ease;
 }
 
+/* Estiliza as opções do dropdown para que fiquem legíveis no fundo escuro */
+.input-group select option {
+  background-color: #0f172a; 
+  color: #FFFFFF;
+  font-size: .9rem;
+}
+
 .input-group input::placeholder,
 .input-group textarea::placeholder {
   color: rgba(255, 255, 255, 0.4);
@@ -143,7 +160,8 @@
 }
 
 .input-group input:focus,
-.input-group textarea:focus {
+.input-group textarea:focus,
+.input-group select:focus {
   outline: none;
   border-color: var(--primary);
   background: rgba(0, 0, 0, 0.4);
@@ -166,11 +184,11 @@
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 1024px) {
   .join-us-grid {
-    gap: 40px;
+    gap: 30px;
   }
   
-  .form-card {
-    padding: 30px;
+  .join-form-wrapper {
+    flex: 0 0 380px; /* Reduz um pouco o tamanho em telas médias */
   }
 }
 
@@ -184,9 +202,13 @@
     gap: 50px; /* Dá um respiro entre a coluna de texto e o card do formulário */
   }
 
+  .join-form-wrapper {
+    flex: 1 auto; /* Permite que o formulário ocupe a largura normal no celular */
+    width: 100%;
+  }
+
   .form-card {
     padding: 30px 20px;
-    max-width: 100%; /* Deixa o formulário expandir no celular */
   }
 
   .join-intro {

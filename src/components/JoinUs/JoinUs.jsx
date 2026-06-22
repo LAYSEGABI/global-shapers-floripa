@@ -7,6 +7,7 @@ import BackGroupImg from "../../assets/Images/Back-faca-parte.jpg";
 
 export default function JoinUs() {
   const { t } = useTranslation();
+  
   return (
     <section 
       className="join-us-section" id="join-us"
@@ -85,7 +86,7 @@ export default function JoinUs() {
                 <input type="hidden" name="access_key" value="f544e5eb-31a6-4483-9f10-18ec2e50683c" />
                 
                 {/* Campo extra recomendado pelo Web3Forms */}
-                <input type="hidden" name="subject" value={t("joinUs.form.subject")}/>
+                <input type="hidden" name="subject" value={t("joinUs.form.subject", "Novo contato para ingresso no Hub")}/>
 
                 <div className="input-group">
                   <label htmlFor="name">{t("joinUs.form.label.name")}</label>
@@ -97,22 +98,33 @@ export default function JoinUs() {
                   <input type="email" id="email" name="email" required placeholder={t("joinUs.form.placeholder.email")} />
                 </div>
 
+                {/* NOVO CAMPO: Área de Interesse */}
+                <div className="input-group">
+                  <label htmlFor="area">{t("joinUs.form.label.area", "Área de Interesse")}</label>
+                  <select id="area" name="area" required defaultValue="">
+                    <option value="" disabled>{t("joinUs.form.placeholder.area", "Selecione uma área...")}</option>
+                    <option value="Gestão de Pessoas">Gestão de Pessoas</option>
+                    <option value="Comunicação">Comunicação</option>
+                    <option value="Captação e Parcerias">Captação e Parcerias</option>
+                    <option value="Projetos">Projetos</option>
+                  </select>
+                </div>
+
                 <div className="input-group">
                   <label htmlFor="message">{t("joinUs.form.label.message")}</label>
                   <textarea 
                     id="message" 
                     name="message" 
-                    rows="1" 
+                    rows="2" 
                     required 
                     placeholder={t("joinUs.form.placeholder.message")}
                   ></textarea>
                 </div>
 
                 <button type="submit" className="primary-btn submit-btn">
-                  {t("joinUs.form.cta") } <Send size={18} />
+                  {t("joinUs.form.cta")} <Send size={18} />
                 </button>
               </form>
-
 
             </div>
           </div>

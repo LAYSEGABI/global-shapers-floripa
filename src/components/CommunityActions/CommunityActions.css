@@ -1,0 +1,99 @@
+.community-actions-section {
+  background-color: var(--background);
+}
+
+.actions-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Área de Texto */
+.actions-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.actions-text p {
+
+  font-size: 1rem;
+
+}
+
+/* Mosaico de Imagens */
+.actions-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 180px);
+  gap: 5px;
+}
+
+.action-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md); /* Usando o border-radius global */
+  transition: transform 0.3s ease;
+}
+
+
+/* Posicionamento específico de cada imagem no Mosaico */
+.img-tall {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3; /* Ocupa as duas linhas (fica esticada na vertical) */
+}
+
+.img-top {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2; /* Ocupa a primeira linha da segunda coluna */
+}
+
+.img-bottom {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3; /* Ocupa a segunda linha da segunda coluna */
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 1024px) {
+  .actions-content-grid {
+    gap: 40px;
+  }
+  
+  .actions-image-gallery {
+    grid-template-rows: repeat(2, 180px);
+  }
+}
+
+@media (max-width: 768px) {
+  .actions-content-grid {
+    grid-template-columns: 1fr; /* Empilha texto em cima e imagens embaixo no celular */
+    gap: 40px;
+  }
+
+  .actions-text p {
+    text-align: left; /* Melhora a leitura no mobile tirando o justify */
+  }
+
+  /* Ajusta o mosaico para o celular */
+  .actions-image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* No celular muito pequeno, empilha todas as imagens para não cortá-las demais */
+  .actions-image-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .img-tall, .img-top, .img-bottom {
+    grid-column: 1 / 2;
+    grid-row: auto;
+    height: 250px;
+  }
+}

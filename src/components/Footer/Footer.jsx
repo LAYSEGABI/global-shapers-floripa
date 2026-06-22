@@ -8,6 +8,7 @@ import LogoBranca from "../../assets/Logos/GSF-branca-fundo-azul.png";
 import InstaIcon from "../../assets/Logos/instagram.png"; 
 import LinkedinIcon from "../../assets/Logos/linkedin.png";
 import FaceIcon from "../../assets/Logos/facebook.png";
+import YoutubeIcon from "../../assets/Logos/youtube.png";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -48,14 +49,17 @@ export default function Footer() {
             <h2>{t("footer.brand.name")}<br />{t("footer.brand.city")}</h2>
             
             <div className="footer-socials">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/globalshapersfloripa/" target="_blank" rel="noreferrer">
                 <img src={InstaIcon} alt={t("footer.socials.instagramAlt")} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/company/global-shapers-florianopolis/posts/?feedView=all" target="_blank" rel="noreferrer">
                 <img src={LinkedinIcon} alt={t("footer.socials.linkedinAlt")} />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/globalshapersflorianopolis/" target="_blank" rel="noreferrer">
                 <img src={FaceIcon} alt={t("footer.socials.facebookAlt")} />
+              </a>
+              <a href="https://www.youtube.com/@globalshapersflorianopolis2357" target="_blank" rel="noreferrer">
+                <img src={YoutubeIcon} alt="Youtube" />
               </a>
             </div>
           </div>

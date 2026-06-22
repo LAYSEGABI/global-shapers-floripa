@@ -28,7 +28,7 @@ function AboutGlobal() {
 
             <p>
               {t("aboutGlobal.description3.part1")}
-              <strong>{t("aboutGlobal.description3.strong1")}</strong> {t("aboutGlobal.description3.part2")}
+              <strong>{t("aboutGlobal.description3.strong1")} </strong> {t("aboutGlobal.description3.part2")}
               {t("aboutGlobal.description3.part3")}
             </p>
           </div>

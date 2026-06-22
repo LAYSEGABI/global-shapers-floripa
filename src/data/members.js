@@ -8,12 +8,18 @@ import LayseImg from "../assets/Members/layse-gabrielly.jpg";
 import LuizaMontanheriImg from "../assets/Members/luiza-montanheri.jpg";
 import MariaClaraImg from "../assets/Members/maria-clara.jpg";
 import Hadassa from "../assets/Members/hadassa.jpg";
-import Marilia from "../assets/Members/marilia-mortican.jpg";
 import MariaHelena from "../assets/Members/maria-helena.png";
 import BrunaSeixas from "../assets/Members/bruna-seixas.png";
 import Sophia from "../assets/Members/sophia.png";
 import Tarik from "../assets/Members/tarik.png";
 import Nicole from "../assets/Members/nicole.png";
+
+// Novas importações
+import LuizaRosa from "../assets/Members/luiza-rosa.png";
+import Laisa from "../assets/Members/laisa.png";
+import Milla from "../assets/Members/milla.png";
+import Elenita from "../assets/Members/elenita.png";
+import LuisaHoffmann from "../assets/Members/luisa-hoffmann.png";
 
 export const members = [
   {
@@ -30,12 +36,6 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/brunaprosa/",
   },
   {
-    name: "Marília Santos",
-    role: "Alumni",
-    image: Marilia,
-    linkedin: "https://www.linkedin.com/in/mariliasheilasantos/",
-  },
-  {
     name: "Hadassa",
     role: "Assistente de Projetos",
     image: Hadassa,
@@ -44,7 +44,7 @@ export const members = [
   },
   {
     name: "Layse Gabrielly",
-    role: "Comunicação - Tecnologia",
+    role: "Comunicação • Tecnologia",
     image: LayseImg,
     linkedin: "https://www.linkedin.com/in/layse-gabrielly/",
   },
@@ -54,7 +54,6 @@ export const members = [
     image: MariaHelena,
     linkedin: "https://www.linkedin.com/in/mariahelenaariano/",
   },
- 
   {
     name: "Catherine",
     role: "Co-liderança • Foco no Debate",
@@ -63,13 +62,13 @@ export const members = [
   },
   {
     name: "Luiza M.",
-    role: "Co-liderança • Ecotrilhas",
+    role: "Assistente de Comunicação",
     image: LuizaMontanheriImg,
     linkedin: "https://www.linkedin.com/in/luizamontanheri/",
   },
   {
     name: "Maria Clara",
-    role: "Co-liderança • Ecotrilhas",
+    role: "Lider de Captação de Recursos e Parcerias",
     image: MariaClaraImg,
     linkedin: "https://www.linkedin.com/in/mariac-moura/",
   },
@@ -86,17 +85,21 @@ export const members = [
     linkedin:
       "https://www.linkedin.com/in/daniela-nascimento-lopes-a1014827a/?locale=en",
   },
-
   {
     name: "Luiza Montanheri",
     role: "Assistente de Comunicação",
     image: LuizaMontanheriImg,
     linkedin: "https://www.linkedin.com/in/luizamontanheri/",
   },
-  
+   {
+    name: "Elenita",
+    role: "Assistente de Captação e Parcerias",
+    image: Elenita,
+    linkedin: "https://www.linkedin.com/in/elenitasales/",
+  },
   {
     name: "Sophia",
-    role: "Captação e Parcerias",
+    role: "Assistente de Captação e Parcerias",
     image: Sophia,
     linkedin: "https://www.linkedin.com/in/sophia-braga-7702481b8/",
   },
@@ -108,7 +111,7 @@ export const members = [
   },
   {
     name: "Nicole",
-    role: "Gestão de Pessoas",
+    role: "Assistente de Gestão de Pessoas",
     image: Nicole,
     linkedin: "https://www.linkedin.com/in/nicole-iata-mendes/",
   },
@@ -118,10 +121,35 @@ export const members = [
     image: BrunaSeixas,
     linkedin: "http://lattes.cnpq.br/1252311691862821",
   },
-   {
+  {
     name: "Ian Tarik",
     role: "Assistente de Projetos",
     image: Tarik,
     linkedin: "https://www.linkedin.com/in/ian-tarik-santos/",
+  },
+  {
+    name: "Luiza Rosa",
+    role: "Co-liderança • Foco no Debate",
+    image: LuizaRosa,
+    linkedin: "https://www.linkedin.com/in/luiza-lopes-rosa-60608b195/",
+  },
+  {
+    name: "Laisa",
+    role: "Assistente de Captação e Parcerias",
+    image: Laisa,
+    linkedin: "https://www.linkedin.com/in/laisacardoso/",
+  },
+  {
+    name: "Milla",
+    role: "Assistente de Captação e Parcerias",
+    image: Milla,
+    linkedin: "https://www.linkedin.com/in/millarayssa",
+  },
+ 
+  {
+    name: "Luisa Hoffmann",
+    role: "Assistente de Comunicação",
+    image: LuisaHoffmann,
+    linkedin: "https://www.linkedin.com/in/luísa-hoffmann-43696a227",
   },
 ];

@@ -4,6 +4,7 @@ import "./Community.css";
 import { UsersRound } from "lucide-react";
 import { curators } from "../../data/curators";
 import { members } from "../../data/members";
+import { alumnis } from "../../data/alumnis";
 import Linkedin from "../../assets/Logos/linkedin.png";
 
 export default function Community() {
@@ -100,6 +101,28 @@ export default function Community() {
               </div>
             ))}
           </div>
+        </div>
+
+        <h3 className="community-subtitle">{t("community.alumnis", "Alumnis")}</h3>
+
+        <div className="curators-grid">
+          {alumnis.map((person) => (
+            <div className="person-card" key={person.name}>
+              <div className="avatar-wrapper">
+                <img src={person.image} alt={t("community.photoAlt", { name: person.name })} />
+                <a 
+                  href={person.linkedin} 
+                  className="linkedin-badge" 
+                  target="_blank" 
+                  rel="noreferrer"
+                >
+                  <img src={Linkedin} alt={t("community.linkedinAlt")} />
+                </a>
+              </div>
+              <h4>{person.name}</h4>
+              <p>{person.role}</p>
+            </div>
+          ))}
         </div>
 
       </div>

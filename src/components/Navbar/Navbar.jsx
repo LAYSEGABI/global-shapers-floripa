@@ -54,6 +54,7 @@ function Navbar() {
           <a href="#projects" onClick={closeMenu}>{t('navbar.links.projects')}</a>
           <a href="#events" onClick={closeMenu}>{t('navbar.links.events')}</a>
           <a href="#support" onClick={closeMenu}>{t('navbar.links.support')}</a>
+          <a href="#actions" onClick={closeMenu}>{t('navbar.links.actions')}</a>
 
           {/* Botão Faça Parte no mobile */}
           <a href="#join-us" className="mobile-cta" onClick={closeMenu}>

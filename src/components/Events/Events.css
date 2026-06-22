@@ -1,5 +1,3 @@
-
-
 .events-list {
   display: flex;
   flex-direction: column;
@@ -19,10 +17,10 @@
 
 /* Área de Texto */
 .event-content {
-  padding: 40px ;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-justify-content: center;
+  justify-content: center;
 }
 
 .event-content h3 {
@@ -44,27 +42,52 @@ justify-content: center;
   margin-bottom: 0;
 }
 
+/* Estilo do Link Externo */
+.event-external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.event-external-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
 /* Configuração Padrão das Imagens */
 .event-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  min-height: 300px;
+  min-height: 200px;
 }
 
 /* --- GRID LAYOUTS (Desktop) --- */
 
-/* Card 1: Imagem (20%) | Texto (40%) | Imagem (20%) | Imagem (20%) */
+/* Novo Card SHAPE LATAM: Imagem | Texto | Imagem */
+.layout-3col-latam {
+  grid-template-columns: 1.5fr 2.5fr 1fr;
+}
+
+/* Card: Imagem (20%) | Texto (40%) | Imagem (20%) | Imagem (20%) */
 .layout-4col {
   grid-template-columns: 0.8fr 1.6fr 1fr 1fr;
 }
 
-/* Card 2: Imagem (Esquerda) | Texto (Direita) */
+/* Card: Imagem (Esquerda) | Texto (Direita) */
 .layout-2col-reverse {
   grid-template-columns: 1fr 1.3fr;
+  
 }
 
-/* Card 3: Texto (Esquerda) | Imagem (Direita) */
+/* Card: Texto (Esquerda) | Imagem (Direita) */
 .layout-2col {
   grid-template-columns: 1.5fr 1fr;
 }
@@ -77,8 +100,14 @@ justify-content: center;
     grid-template-columns: 1fr 1.5fr 1fr;
   }
   
+  /* Ajuste no LATAM para tablet */
+  .layout-3col-latam {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  
   /* Escondemos a terceira foto apenas no tablet para manter proporção */
-  .layout-4col .event-img:last-child {
+  .layout-4col .event-img:last-child,
+  .layout-3col-latam .event-img:last-child {
     display: none; 
   }
   
@@ -103,7 +132,8 @@ justify-content: center;
   /* Garantir que as imagens fiquem sempre no topo no celular (independente se era direita ou esquerda) */
   .layout-2col-reverse .event-content,
   .layout-2col .event-content,
-  .layout-4col .event-content {
+  .layout-4col .event-content,
+  .layout-3col-latam .event-content {
     order: 2;
   }
 
@@ -112,14 +142,16 @@ justify-content: center;
     order: 1;
   }
 
-  /* Trato específico para o Card 1 (que tem múltiplas fotos) no celular */
-  .layout-4col .event-img {
+  /* Trato específico para cards com mais fotos no celular */
+  .layout-4col .event-img,
+  .layout-3col-latam .event-img {
     order: 1;
   }
   
-  /* Escondemos as fotos menores do Card 1 no mobile, mantendo apenas a principal (a foto 2 do meio) para não ficar com scroll infinito de fotos */
+  /* Escondemos as fotos menores no mobile para não ficar com scroll infinito de fotos */
   .layout-4col .event-img:nth-child(1),
-  .layout-4col .event-img:nth-child(4) {
+  .layout-4col .event-img:nth-child(4),
+  .layout-3col-latam .event-img:last-child {
     display: none;
   }
 }
