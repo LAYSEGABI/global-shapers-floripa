@@ -61,7 +61,7 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/cathhildebrandt/?locale=en",
   },
   {
-    name: "Luiza M.",
+    name: "Luiza Montanheri",
     role: "Assistente de Comunicação",
     image: LuizaMontanheriImg,
     linkedin: "https://www.linkedin.com/in/luizamontanheri/",
@@ -85,12 +85,7 @@ export const members = [
     linkedin:
       "https://www.linkedin.com/in/daniela-nascimento-lopes-a1014827a/?locale=en",
   },
-  {
-    name: "Luiza Montanheri",
-    role: "Assistente de Comunicação",
-    image: LuizaMontanheriImg,
-    linkedin: "https://www.linkedin.com/in/luizamontanheri/",
-  },
+
    {
     name: "Elenita",
     role: "Assistente de Captação e Parcerias",

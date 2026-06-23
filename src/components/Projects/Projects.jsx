@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 // 1. Importando as fotos de capa da pasta Images
 import EcotrilhasCover from "../../assets/Images/ecotrilhas.jpg";
-import FocoCover from "../../assets/Images/foco-no-debate.jpg";
+import FocoCover from "../../assets/Images/foco-no-debate.png";
 import ShaperCover from "../../assets/Images/shapers-lab.png";
 
 import EcotrilhasLogo from "../../assets/Logos/logo-ecotrilhas.jpg";
