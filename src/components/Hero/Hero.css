@@ -72,7 +72,7 @@
   color: white;
   border-radius: 0px 30px 30px 0px;
   backdrop-filter: blur(8px);
-
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .hero-card h1 {
@@ -220,24 +220,30 @@
 @media (max-width: 1100px) {
   .hero-content {
     flex-direction: column;
-    gap: 40px; /* Um espaço extra entre o texto e o card de idioma */
-    align-items: center; /* Centraliza o flex container (mantém o card maior no meio) */
-    padding: 110px 0 0; /* Removido o padding inferior e lateral para o card azul poder grudar na borda */
+    gap: 40px;
+    /* Um espaço extra entre o texto e o card de idioma */
+    align-items: center;
+    /* Centraliza o flex container (mantém o card maior no meio) */
+    padding: 110px 0 0;
+    /* Removido o padding inferior e lateral para o card azul poder grudar na borda */
   }
 
   .hero-card {
     max-width: 650px;
-    padding: 20px 24px; /* O padding lateral vem pra cá para o texto não colar na tela do celular/tablet */
+    padding: 20px 24px;
+    /* O padding lateral vem pra cá para o texto não colar na tela do celular/tablet */
     text-align: center;
     border-radius: 30px;
-    align-self: center; /* Garante que o card principal fique fixo no meio */
+    align-self: center;
+    /* Garante que o card principal fique fixo no meio */
   }
 
   /* Ajuste responsivo para a nova imagem */
   .hero-le-cutout {
     width: 100%;
     max-width: 380px;
-    align-self: flex-end; /* Joga especificamente o card azul para o canto direito */
+    align-self: flex-end;
+    /* Joga especificamente o card azul para o canto direito */
     margin-bottom: -1px;
   }
 
@@ -257,10 +263,11 @@
   }
 
   .hero-content {
-    padding: 90px 0 0; /* Segue a mesma lógica do de cima */
+    padding: 90px 0 0;
+    /* Segue a mesma lógica do de cima */
     gap: 0px;
   }
-  
+
   .hero-card {
     padding: 20px 24px;
     margin: 20px 30px 0px 30px;
@@ -280,7 +287,8 @@
   /* Mantendo a lógica pro celular */
   .hero-le-cutout {
     width: 100%;
-    align-self: flex-end; /* Mantém colado na direita */
+    align-self: flex-end;
+    /* Mantém colado na direita */
   }
 
   .hero-btn {
@@ -297,13 +305,13 @@
 }
 
 @media (max-width: 430px) {
- .hero-le-cutout {
+  .hero-le-cutout {
     width: 100%;
     max-width: 330px;
-    align-self: flex-end; 
+    align-self: flex-end;
   }
 
-    .hero-card {
+  .hero-card {
     padding: 20px 24px;
     margin: 20px 15px 0px 15px;
     margin-bottom: -20px;
@@ -324,6 +332,6 @@
   .le-action-btn {
     margin-top: 2px;
   }
-  
+
 
 }
