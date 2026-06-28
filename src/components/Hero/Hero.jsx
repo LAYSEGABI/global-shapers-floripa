@@ -21,7 +21,7 @@ function Hero() {
             fetchPriority="high"
           />
 <div className="hero-overlay"></div>
-          <a href="#" className="hero-shaper-badge">
+          <a href="https://forms.gle/bo1UNYA9jpzwxt7T6" className="hero-shaper-badge">
             {t("hero.shaperBadge")}
           </a>
 
